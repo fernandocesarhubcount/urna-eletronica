@@ -65,4 +65,4 @@ Mas vamos para o que importa: O Teste.
 7. Plus II*: layout.
 8. Plus III*: outras tecnologias utilizadas.
 
-* - _o importante são os outros pontos, mas esse poderá ser escolhido como ponto de desempate_
+\*: _o importante são os outros pontos, mas esse poderá ser escolhido como ponto de desempate_
