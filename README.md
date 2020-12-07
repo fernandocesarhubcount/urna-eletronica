@@ -49,7 +49,7 @@ Mas vamos para o que importa: O Teste.
 ### Regras do teste:
 
 - Crie um branch deste repositório e, quando estiver finalizado, nos responda o último e-mail que lhe enviamos com o link do repositório
-- Desenvolver e entregar até às 23h59 do dia 27/11/2020
+- Desenvolver e entregar até às 23h59 do dia 13/12/2020
 - Utilizar a linguagem C# com o Entity Framework (_Requisitos Obrigatórios_)
 - Pode utilizar qualquer outra ferramenta que te agrade
 - Havendo qualquer dúvida sobre o teste é só responder o e-mail que enviamos
