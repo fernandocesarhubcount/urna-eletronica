@@ -1,8 +1,6 @@
 # Parabéns Desenvolvedores!
 
-Se você recebeu este teste é porque você foi um dos selecionados para a segunda fase da vaga da HubCount, que é o teste de conhecimento.
-
-Lembrando que: A primeira foi a seleção de currículo e a última é a entrevista.
+Se você recebeu este teste é porque você foi um dos selecionados para a fase de conhecimento da vaga da HubCount.
 
 Mas vamos para o que importa: O Teste.
 
