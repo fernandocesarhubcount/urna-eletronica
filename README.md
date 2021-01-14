@@ -2,7 +2,7 @@
 
 Se você recebeu este teste é porque você foi um dos selecionados para a segunda fase da vaga da HubCount, que é o teste de conhecimento.
 
-Lembrando que: A primeira foi a seleção e a última é a entrevista.
+Lembrando que: A primeira foi a seleção de currículo e a última é a entrevista.
 
 Mas vamos para o que importa: O Teste.
 
@@ -28,11 +28,11 @@ Mas vamos para o que importa: O Teste.
 
  - Desenvolver uma API om C# e Entity Framework (o body de retorno e de envio deverá ser em JSON), com os seguintes endpoints:
  
- 1. **/PostCandidate**: Registro de candidatos.
- 2. **/DeleteCandidate**: Exclusão de candidatos.
- 3. **/EditCandidate**: Edição de candidatos
- 4. **/PostVote**: cadastro dos votos. Deverá tratar os votos nulos.
- 5. **/GetVotes**: retorna os  candidatos (nome, legenda...) com a quantidade de votos que cada um recebeu. OBS: inclua a opção de filtrar por tipo de candidato (Prefeito ou Vereador), sendo que o tipo 0 (zero) deverá retornar todos os votos e o tipo 3 deverá retornar os votos brancos e/ou nulos.
+ 1. **/candidate [via POST]**: Registro de candidatos.
+ 2. **/candidate  [via DELETE]**: Exclusão de candidatos.
+ 3. **/candidate [via EDIT]**: Edição de candidatos
+ 4. **/vote [via POST]**: cadastro dos votos. Deverá tratar os votos nulos.
+ 5. **/votes [via GET]**: retorna os  candidatos (nome, legenda...) com a quantidade de votos que cada um recebeu. OBS: inclua a opção de filtrar por tipo de candidato (Prefeito ou Vereador), sendo que o tipo 0 (zero) deverá retornar todos os votos e o tipo 3 deverá retornar os votos brancos e/ou nulos.
  
  - O registro de candidatos deverá conter:
  1. **Nome Completo** (_string_)
@@ -48,11 +48,11 @@ Mas vamos para o que importa: O Teste.
 
 ### Regras do teste:
 
-- Crie um branch deste repositório e, quando estiver finalizado, nos responda o último e-mail que lhe enviamos com o link do repositório
-- Desenvolver e entregar até às 23h59 do dia 13/12/2020
+- Crie um branch deste repositório e, quando estiver finalizado, realize um pull request para a master
+- Desenvolver e entregar até a meia noite da data combinada.
 - Utilizar a linguagem C# com o Entity Framework (_Requisitos Obrigatórios_)
 - Pode utilizar qualquer outra ferramenta que te agrade
-- Havendo qualquer dúvida sobre o teste é só responder o e-mail que enviamos
+- Havendo qualquer dúvida sobre o teste é só entrar em contato pelo e-mail: fernando.cesar@hubcount.com.br
 
 ### Método de avaliação por prioridade (_da mais para a menos importante_):
 
