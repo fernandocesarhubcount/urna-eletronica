@@ -25,9 +25,8 @@ Mas vamos para o que importa: O Teste.
  
  1. **/candidate [via POST]**: Registro de candidatos.
  2. **/candidate  [via DELETE]**: Exclusão de candidatos.
- 3. **/candidate [via EDIT]**: Edição de candidatos
- 4. **/vote [via POST]**: cadastro dos votos. Deverá tratar os votos nulos.
- 5. **/votes [via GET]**: retorna os  candidatos (nome, legenda...) com a quantidade de votos que cada um recebeu. OBS: inclua a opção de filtrar por tipo de candidato (Prefeito ou Vereador), sendo que o tipo 0 (zero) deverá retornar todos os votos e o tipo 3 deverá retornar os votos brancos e/ou nulos.
+ 3. **/vote [via POST]**: cadastro dos votos. Deverá tratar os votos nulos.
+ 4. **/votes [via GET]**: retorna os  candidatos (nome, legenda...) com a quantidade de votos que cada um recebeu.
  
  - O registro de candidatos deverá conter:
  1. **Nome Completo** (_string_)
