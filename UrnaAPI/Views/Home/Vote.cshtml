@@ -1,0 +1,73 @@
+﻿@model List<UrnaAPI.Models.Candidate>
+
+@{
+    ViewData["Title"] = "Contagem de Votos";
+}
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.min.js" integrity="sha512-5vwN8yor2fFT9pgPS9p9R7AszYaNn0LkQElTXIsZFCL7ucT8zDCAqlQXDdaqgA1mZP47hdvztBMsIoFxq/FyyQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<canvas id="myChart" width="1600" height="900"></canvas>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Nome do Candidato
+            </th>
+            <th>
+                Total de Votos
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.OrderByDescending(p => p.Votes.Count))
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CandidateName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Votes.Count)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script>
+    const urlCandidate = 'https://localhost:44362/api/Candidates';
+
+    var names = [];
+    var votes = [];
+
+    fetch(urlCandidate)
+        .then(response => response.json())
+        .then(data => plotGraph(data))
+        .catch(error => console.error('Não foi possível consultar os candidatos.', error));
+
+
+    function plotGraph(data) {
+
+        data.sort((a, b) => parseInt(b["votes"].length) - parseInt(a["votes"].length));
+
+        data.forEach(item => {
+            names.push(item["candidateName"]);
+            votes.push(item["votes"].length);
+        });
+
+        var ctx = document.getElementById("myChart");
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: names,
+                datasets: [
+                    {
+                        data: votes,
+                        label: "Votos"
+                    }
+                ]
+            }
+        });
+    }
+</script>

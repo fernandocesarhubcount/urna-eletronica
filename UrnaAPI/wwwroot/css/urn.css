@@ -1,0 +1,156 @@
+﻿/*Backgrounds*/
+
+.urnBackground {
+    background-color: aliceblue;
+    width: 150vh;
+    height: 60vh;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 10px;
+    border-right-color: black;
+    border-bottom-color: black;
+}
+
+.candidateInfoBackground {
+    position: relative;
+    background-color: white;
+    margin-top: 6%;
+    margin-left: 2%;
+    width: 45%;
+    height: 70%;
+    float: left;
+    border-radius: 1px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.keypadBackground {
+    position: relative;
+    background-color: slategrey;
+    margin-top: 2%;
+    margin-right: 2%;
+    margin-left: 6%;
+    width: 45%;
+    height: 90%;
+    float: left;
+    border-radius: 10px;
+}
+
+.ticketNumbersBackground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.labelsBackground {
+    padding-top: 10%;
+    float: left;
+}
+
+/*Buttons*/
+.ticketNumber {
+    text-align: center;
+    margin-top: 2%;
+    margin-right: 2%;
+    margin-left: 4%;
+    width: 120px;
+    height: 200px;
+    float: left;
+    border-radius: 1px;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 180px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.keypadButton {
+    margin-top: 2%;
+    margin-right: 6%;
+    margin-left: 10%;
+    width: 15%;
+    height: 60px;
+    float: left;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.keypadWhiteButton {
+    margin-top: 2%;
+    margin-right: 2%;
+    margin-left: 6%;
+    width: 140px;
+    height: 50px;
+    float: left;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.keypadCorrectButton {
+    margin-top: 2%;
+    margin-right: 2%;
+    margin-left: 6%;
+    width: 140px;
+    height: 50px;
+    float: left;
+    background-color: crimson;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.keypadConfirmButton {
+    margin: 2% 2% 2% 6%;
+    width: 150px;
+    height: 60px;
+    float: left;
+    background-color: forestgreen;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.keypadConfirmButton {
+    float: left;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.labelText {
+    float: left;
+    width:100%;
+}
+
+/*Rows style*/
+.buttonTicketRow {
+    margin-top: 40px;
+    width: 100%;
+    float: left;
+}
+
+.labelsRow {
+    width: 100%;
+    height:50%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.buttonUtilRow {
+    margin-left: 20px;
+    position: absolute;
+    width: 100%;
+    float: left;
+    bottom: 0;
+}

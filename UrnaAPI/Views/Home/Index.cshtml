@@ -1,0 +1,193 @@
+﻿@model IEnumerable<UrnaAPI.Models.Candidate>
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+<link rel="stylesheet" href="~/css/modal.css">
+<link rel="stylesheet" href="~/css/urn.css">
+
+<div class="text-center">
+    <h1 class="display-4">Bem-Vindo Eleitor</h1>
+
+    <div class="urnBackground">
+        <div id="candidateInfo" class="candidateInfoBackground">
+            <div class="ticketNumberRow">
+                <div id="ticketNumbers" class="ticketNumbersBackground">
+                    <input id="number1" type="number" maxlength="1" class="ticketNumber" readonly />
+                    <input id="number2" type="number" maxlength="1" class="ticketNumber" readonly />
+                </div>
+            </div>
+
+            <div class="labelsRow">
+                <div id="labels" class="labelsBackground">
+                    <label id="candidateName" class="labelText">
+                    </label>
+                    <label id="candidateVice" class="labelText">
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div id="keypad" class="keypadBackground">
+            <div class="buttonTicketRow">
+                <button id="numberButton1" class="keypadButton" onClick="SetValue(this.value)" value="1"> 1 </button>
+                <button id="numberButton2" class="keypadButton" onClick="SetValue(this.value)" value="2"> 2 </button>
+                <button id="numberButton3" class="keypadButton" onClick="SetValue(this.value)" value="3"> 3 </button>
+                <button id="numberButton4" class="keypadButton" onClick="SetValue(this.value)" value="4"> 4 </button>
+                <button id="numberButton5" class="keypadButton" onClick="SetValue(this.value)" value="5"> 5 </button>
+                <button id="numberButton6" class="keypadButton" onClick="SetValue(this.value)" value="6"> 6 </button>
+                <button id="numberButton7" class="keypadButton" onClick="SetValue(this.value)" value="7"> 7 </button>
+                <button id="numberButton8" class="keypadButton" onClick="SetValue(this.value)" value="8"> 8 </button>
+                <button id="numberButton9" class="keypadButton" onClick="SetValue(this.value)" value="9"> 9 </button>
+
+                <button class="keypadButton" style="visibility: hidden"></button>
+                <button id="numberButton" class="keypadButton" onClick="SetValue(this.value)" value="0"> 0 </button>
+                <button class="keypadButton" style="visibility: hidden">  </button>
+            </div>
+
+            <div class="buttonUtilRow">
+                <button id="whiteButton" class="keypadWhiteButton" onclick="WhiteVote()"> Branco </button>
+                <button id="correctButton" class="keypadCorrectButton" onClick="Clear()"> Corrige </button>
+                <button id="confirmButton" class="keypadConfirmButton" disabled onClick="Vote()"> Confirma </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="myModal" class="modal">
+
+    <div class="modal-content">
+        <span class="close">⟳</span>
+        <p>Sucesso!</p>
+    </div>
+
+</div>
+
+<script>
+
+    const uriCandidate = 'api/Candidates';
+    const uriVotes = 'api/Votes';
+
+    //Support Variables
+    let candidateId;
+
+    function SetValue(ClickedValue) {
+        if (!document.getElementById("number1").value != "") {
+            document.getElementById("number1").value = ClickedValue;
+        }
+        else if (!document.getElementById("number2").value != "") {
+            document.getElementById("number2").value = ClickedValue;
+            SearchCandidate();
+        }
+        else {
+            document.getElementById("numberButton").disabled = true;
+            document.getElementById("numberButton1").disabled = true;
+            document.getElementById("numberButton2").disabled = true;
+            document.getElementById("numberButton3").disabled = true;
+            document.getElementById("numberButton4").disabled = true;
+            document.getElementById("numberButton5").disabled = true;
+            document.getElementById("numberButton6").disabled = true;
+            document.getElementById("numberButton7").disabled = true;
+            document.getElementById("numberButton8").disabled = true;
+            document.getElementById("numberButton9").disabled = true;
+        }
+    }
+
+    function Clear() {
+        document.getElementById("number1").value = "";
+        document.getElementById("number2").value = "";
+        document.getElementById("candidateName").innerText = "";
+        document.getElementById("candidateVice").innerText = "";
+        document.getElementById("confirmButton").disabled = true;
+
+        document.getElementById("numberButton").disabled = false;
+        document.getElementById("numberButton1").disabled = false;
+        document.getElementById("numberButton2").disabled = false;
+        document.getElementById("numberButton3").disabled = false;
+        document.getElementById("numberButton4").disabled = false;
+        document.getElementById("numberButton5").disabled = false;
+        document.getElementById("numberButton6").disabled = false;
+        document.getElementById("numberButton7").disabled = false;
+        document.getElementById("numberButton8").disabled = false;
+        document.getElementById("numberButton9").disabled = false;
+    }
+
+    function WhiteVote() {
+        document.getElementById("number1").value = "0";
+        document.getElementById("number2").value = "0";
+        SearchCandidate();
+    }
+
+    function Vote() {
+        const item = {
+            registryDate: GetTodayDate(),
+            candidateId: candidateId
+        };
+
+        fetch(uriVotes, {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(item)
+        })
+            .then(response => response.json())
+            .then(VoteSuccess())
+            .catch(error => console.error('Não foi possível efetuar o voto.', error));
+    }
+
+    function VoteSuccess() {
+        modal.style.display = "block"
+    }
+
+    function SearchCandidate() {
+
+        var ticket = document.getElementById("number1").value + document.getElementById("number2").value;
+
+        if (ticket == '00') { ticket = 0 }
+
+        fetch(uriCandidate)
+            .then(response => response.json())
+            .then(data => _displayCandidate(data, ticket))
+            .catch(error => console.error('Não foi possível consultar os candidatos.', error));
+
+    }
+
+    function GetTodayDate() {
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0');
+        var yyyy = today.getFullYear();
+
+        return today = yyyy + '-' + mm + '-' + dd;
+    }
+
+    function _displayCandidate(data, ticket) {
+        data.forEach(item => {
+            if (item["ticket"] == ticket) {
+                candidateId = item["candidateId"]
+                document.getElementById("candidateName").innerText = "Nome do Candidato: " + item["candidateName"];
+                document.getElementById("candidateVice").innerText = "Nome do Vice-Candidato: " + item["viceName"];
+                document.getElementById("confirmButton").disabled = false;
+            }
+        });
+    }
+
+    var modal = document.getElementById("myModal");
+
+    var span = document.getElementsByClassName("close")[0];
+
+    span.onclick = function () {
+        modal.style.display = "none";
+        window.location.reload(true)
+    }
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+            window.location.reload(true)
+        }
+    }
+</script>

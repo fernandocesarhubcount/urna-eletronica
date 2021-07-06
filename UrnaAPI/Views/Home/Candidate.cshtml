@@ -1,0 +1,166 @@
+﻿@model List<UrnaAPI.Models.Candidate>
+
+@{
+    ViewData["Title"] = "Cadastro e Listagem de Candidatos";
+}
+
+<link rel="stylesheet" href="~/css/modal.css">
+
+
+<h4>
+    Cadastrar candidato
+</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="@Model.FirstOrDefault().CandidateName" class="control-label">Nome do Candidato</label>
+            <input id="candidateName" oninput="checkEmptiness(this.id)" class="form-control" />
+            <span asp-validation-for="@Model.FirstOrDefault().CandidateName" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.FirstOrDefault().ViceName" class="control-label">Nome do Vice</label>
+            <input id="viceName" oninput="checkEmptiness(this.id)" class="form-control" />
+            <span asp-validation-for="@Model.FirstOrDefault().ViceName" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.FirstOrDefault().Ticket" class="control-label">Legenda</label>
+            <input id="ticket" max="99" min="1" oninput="checkTicketLength()" onkeydown="checkEmptiness(this.id)" type="number" class="form-control" />
+            <span id="ticketSpan" asp-validation-for="@Model.FirstOrDefault().Ticket" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Cadastrar Candidato" onclick="CreateCandidate()" class="btn btn-primary" />
+        </div>
+    </div>
+</div>
+<hr />
+<h4>
+    Candidatos
+</h4>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Nome do Candidato
+            </th>
+            <th>
+                Legenda
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CandidateName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ticket)
+                </td>
+                <td>
+                    <input type="submit" value="Deletar" onclick="DeleteCandidate(@item.CandidateId)" class="btn btn-danger" />
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div id="myModal" class="modal">
+
+    <div class="modal-content">
+        <span class="close">⟳</span>
+        <p id="modalMessage">Sucesso.</p>
+    </div>
+
+</div>
+
+<script>
+    const urlCandidate = 'https://localhost:44362/api/Candidates';
+
+
+    function checkTicketLength() {
+        var length = document.getElementById("ticket").value.length
+        if (length > 2) {
+            var resultValue = document.getElementById("ticket").value.slice(0, 2);
+            document.getElementById("ticket").value = resultValue;
+        }
+    }
+
+    function checkEmptiness(id) {
+        var length = document.getElementById(id).value.length
+        console.log(length)
+        if (length < 1) {
+            document.getElementById(id).style.borderColor = 'red'
+        }
+        else {
+            document.getElementById(id).style.borderColor = ''
+        }
+    }
+
+    function CreateCandidate() {
+
+        const item = {
+            candidateName: document.getElementById("candidateName").value,
+            viceName: document.getElementById("viceName").value,
+            registryDate: GetTodayDate(),
+            ticket: document.getElementById("ticket").value
+        };
+
+        fetch(urlCandidate, {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(item)
+        }).then(function (response) {
+            console.log(response.status);
+            if (!response.ok) {
+                modal.style.display = "block"
+                modalMessage.innerText = "Inválido, Verifique os campos."
+                throw new Error("HTTP status " + response.status);
+            }
+            modalMessage.innerText = "Sucesso."
+            modal.style.display = "block"
+        })
+            .catch (error => console.error('Não foi possível cadastrar o candidato.', error));
+    }
+
+    function DeleteCandidate(id) {
+
+        fetch(`${urlCandidate}/${id}`, {
+            method: 'DELETE'
+        })
+            .catch(error => console.error('Unable to delete item.', error));
+    }
+
+    function GetTodayDate() {
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0');
+        var yyyy = today.getFullYear();
+
+        return today = yyyy + '-' + mm + '-' + dd;
+    }
+
+    var modal = document.getElementById("myModal");
+
+    var modalMessage = document.getElementById("modalMessage");
+
+    var span = document.getElementsByClassName("close")[0];
+
+    span.onclick = function () {
+        modal.style.display = "none";
+        window.location.reload(true)
+    }
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+            window.location.reload(true)
+        }
+    }
+</script>
