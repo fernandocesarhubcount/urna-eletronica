@@ -1,0 +1,44 @@
+﻿@model UrnaEletronica.Views.Adicionar.AdicionarPageModel
+@{
+    ViewData["Title"] = "Adicionar";
+}
+
+@section Scripts {
+    <script src="~/js/site.js"></script>
+}
+
+<div style="margin: 0 0 0 15px">
+    <h3>Adicionar Candidato</h3>
+    <br />
+    <p> Informe os dados do candidato </p>
+    <div asp-validation-summary="All"></div>
+    <form method="POST" asp-controller="Adicionar" asp-action="Salvar">
+        <table id="adicionar-editar">
+            <tr>
+                <td>Codigo:</td>
+                <td><input class="input-candidato" required asp-for="Candidato.Codigo" min="10" max="99" id="codigo" /></td>
+            </tr>
+            <tr>
+                <td>Nome:</td>
+                <td><input required class="input-candidato" asp-for="Candidato.Nome" id="nome" /></td>
+            </tr>
+            <tr>
+                <td>Partido:</td>
+                <td><input class="input-candidato" required asp-for="Candidato.Partido" id="partido" /></td>
+            </tr>
+            <tr>
+                <td>Vice:</td>
+                <td><input class="input-candidato" required asp-for="Candidato.Vice" id="vice" /></td>
+            </tr>
+        </table>
+        <input type="button" value="Adicionar" onclick="salvar('/Cadastro/Adicionar/candidate')" />
+    </form>
+    <div id="tela-erro" />
+</div>
+
+<div style="display: none;" id="msg-erro">
+    <label style="color: red">Erro ao adicionar o candidato, tente novamente...</label>
+    <br />
+    <label style="color: red">Exceção: </label>
+    <label style="color: red" id="excecao" />
+</div>

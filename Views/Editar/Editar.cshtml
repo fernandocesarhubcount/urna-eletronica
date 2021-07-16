@@ -1,0 +1,45 @@
+﻿@model UrnaEletronica.Views.Editar.EditarPageModel
+@{
+    ViewData["Title"] = "Adicionar";
+}
+
+@section Scripts {
+    <script src="~/js/site.js"></script>
+}
+
+<div style="margin: 0 0 0 15px">
+    <h3>Editar candidato - @Model.Candidato.Nome</h3>
+    <br />
+    <p> Informe os dados do candidato </p>
+    <div asp-validation-summary="All"></div>
+    <input asp-for="@Model.Candidato.Id" type="hidden" id="id" />
+    <form method="post">
+        <table id="adicionar-editar">
+            <tr>
+                <td><label asp-for="@Model.Candidato.Codigo"></label></td>
+                <td><input class="input-candidato" required asp-for="@Model.Candidato.Codigo" min="10" max="99" id="codigo" /></td>
+            </tr>
+            <tr>
+                <td><label asp-for="@Model.Candidato.Nome"></label></td>
+                <td><input class="input-candidato" required asp-for="@Model.Candidato.Nome" id="nome" /></td>
+            </tr>
+            <tr>
+                <td><label asp-for="@Model.Candidato.Partido"></label></td>
+                <td><input class="input-candidato" required asp-for="@Model.Candidato.Partido" id="partido" /></td>
+            </tr>
+            <tr>
+                <td><label asp-for="@Model.Candidato.Vice"></label></td>
+                <td><input class="input-candidato" required asp-for="@Model.Candidato.Vice" id="vice" /></td>
+            </tr>
+        </table>
+        <input type="button" value="Salvar" onclick="salvar('Editar')" />
+    </form>
+    <div id="tela-erro" />
+</div>
+
+<div style="display: none;" id="msg-erro">
+    <label style="color: red">Erro ao editar o candidato, tente novamente...</label>
+    <br />
+    <label style="color: red">Exceção: </label>
+    <label style="color: red" id="excecao" />
+</div>

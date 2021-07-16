@@ -1,0 +1,39 @@
+﻿@model UrnaEletronica.Views.Cadastro.CadastroPageModel
+@{
+    ViewData["Title"] = "Cadastro";
+}
+@section scripts {
+    <script src="~/js/site.js"></script>
+}
+
+<div style="margin: 0 0 0 15px">
+    <h3>Cadastro de candidatos</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Código</th>
+                <th>Nome</th>
+                <th>Partido</th>
+                <th>Vice</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Candidato candidato in Model.Candidatos)
+            {
+                <tr>
+                    <td>@candidato.Id</td>
+                    <td>@candidato.Codigo</td>
+                    <td>@candidato.Nome</td>
+                    <td>@candidato.Partido</td>
+                    <td>@candidato.Vice</td>
+                    <td>
+                        <a asp-controller="Editar" asp-action="Editar" asp-route-id="@candidato.Id">Editar</a>
+                        <input type="button" value="Deletar" onclick="removerCandidato(@candidato.Id)" />
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a asp-controller="Adicionar" asp-action="Adicionar">Adicionar candidato</a>
+</div>

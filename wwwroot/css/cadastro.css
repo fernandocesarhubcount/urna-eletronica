@@ -1,0 +1,9 @@
+﻿#adicionar-editar {
+    border-collapse: separate;
+    border-spacing: 10px;
+    text-align: right;
+}
+
+.input-candidato {
+    width: 200px;
+}

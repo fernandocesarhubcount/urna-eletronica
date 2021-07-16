@@ -1,0 +1,29 @@
+﻿@model UrnaEletronica.Views.Dashboard.DashboardPageModel
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div style="margin: 0 0 0 15px">
+    <h3>Quantidade de votos</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Votos</th>
+                <th>Nome</th>
+                <th>Partido</th>
+                <th>Vice</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (DadosDashboard dado in Model.Dados)
+            {
+                <tr>
+                    <td>@dado.Votos</td>
+                    <td>@dado.Candidato.Nome</td>
+                    <td>@dado.Candidato.Partido</td>
+                    <td>@dado.Candidato.Vice</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

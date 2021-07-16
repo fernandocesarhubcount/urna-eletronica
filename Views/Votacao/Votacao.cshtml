@@ -1,0 +1,102 @@
+﻿@using UrnaEletronica.Util
+@using System
+@model UrnaEletronica.Models.Candidato
+@{
+    ViewData["Title"] = "Votação";
+}
+@section scripts{
+    <script src="~/js/site.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            trocarTelaUrna('tela-votacao');
+        });
+    </script>
+}
+
+<div>
+    <div id="fundo-urna">
+        <div id="tela-urna"></div>
+        <div id="lateral-urna">
+            <div id="logo-urna">
+                <p>Urna Eleitoral</p>
+            </div>
+            <table id="teclado-urna">
+                <tr>
+                    <td><input type="button" class="botao botao-numero" value="1" onclick="inserirNumero(1)"></td>
+                    <td><input type="button" class="botao botao-numero" value="2" onclick="inserirNumero(2)"></td>
+                    <td><input type="button" class="botao botao-numero" value="3" onclick="inserirNumero(3)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="botao botao-numero" value="4" onclick="inserirNumero(4)"></td>
+                    <td><input type="button" class="botao botao-numero" value="5" onclick="inserirNumero(5)"></td>
+                    <td><input type="button" class="botao botao-numero" value="6" onclick="inserirNumero(6)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="botao botao-numero" value="7" onclick="inserirNumero(7)"></td>
+                    <td><input type="button" class="botao botao-numero" value="8" onclick="inserirNumero(8)"></td>
+                    <td><input type="button" class="botao botao-numero" value="9" onclick="inserirNumero(9)"></td>
+                </tr>
+                <tr>
+                    <td />
+                    <td><input type="button" class="botao botao-numero" id="0" value="0" onclick="inserirNumero(0)"></td>
+                    <td />
+                </tr>
+                <tr>
+                    <td><input type="button" class="botao" value="Branco" id="botao-branco" onclick="votoBranco('@Constantes.VotoEmBranco')"></td>
+                    <td><input type="button" class="botao" value="Corrige" id="botao-vermelho" onclick="limparTela()"></td>
+                    <td><input type="button" class="botao" value="Confirma" id="botao-verde" onclick="confirmar()"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div style="display: none;" id="tela-votacao">
+    <table style="width:100%;">
+        <tr>
+            <td><b style="font-size: 25px;">SEU VOTO PARA</b></td>
+        </tr>
+        <tr>
+            <td><p style="text-align: center; font-size: 25px;">PREFEITO</p></td>
+        </tr>
+        <tr>
+            <td>
+                <div style="display: table">
+                    <label style="font-size: 20px; display: table-cell">Número:</label>
+                    <input style="display: table-cell; margin: 0 0 0 15px" class="form-control" type="text" id="primeiro" maxlength="1" disabled="disabled" />
+                    <input style="display: table-cell;" class="form-control" type="text" id="segundo" maxlength="1" disabled="disabled" />
+                    <label hidden id="data-registro" />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label style="font-size: 20px;">Nome:</label>
+                <label style="font-size: 20px;" id="nome" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label style="font-size: 20px;">Partido:</label>
+                <label style="font-size: 20px;" id="partido" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label style="font-size: 20px;">Vice-Prefeito:</label>
+                <label style="font-size: 20px;" id="vice" />
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div style="display: none;" id="tela-fim">
+    <table style="margin: 0 auto; align-content: center;">
+        <tr>
+            <td align="center"><label style="font-size: 200px">FIM</label></td>
+        </tr>
+        <tr>
+            <td align="center"><input type="button" value="Reiniciar" onclick="trocarTelaUrna('tela-votacao')" /></td>
+        </tr>
+    </table>
+</div>
