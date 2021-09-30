@@ -1,0 +1,110 @@
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.container {
+  max-width: 960px;
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+
+.card-deck .card {
+  min-width: 220px;
+}
+
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+$colorWhite: #fff;
+$colorBlack: #000;
+$colorGray: #3d3d3d;
+
+body{
+  background: #f6f6f6;
+}
+
+.container{
+  background: $colorWhite;
+}
+
+.urna{
+  background: #E7E7E7;
+}
+
+.desktop{
+  border: 2px solid #cccccc;
+  background: #f8f8f8;
+}
+
+.teclas{
+  background: #3a3535;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #242527;
+  border-color: #131313;
+}
+  &:hover{
+    background: darken($colorGray, 15);
+  }
+}
+
+.btn-branco{
+  color: $colorBlack;
+  background: $colorWhite;
+  &:hover{
+    color: $colorBlack;
+    background: darken($colorWhite, 10);
+  }
+}
+.btn-corrige{
+  background: #EA7E07;
+  &:hover{
+    background: darken(#EA7E07, 5);
+  }
+}
+.btn-confirma{
+  background: #339900;
+  &:hover{
+    background: darken(#339900, 5);
+  }
+}
+
+
+.btn-branco.disabled, .btn-branco:disabled {
+  color: lighten($colorBlack, 10);
+  background: lighten($colorWhite, 10);
+}
+
+.btn-corrige.disabled, .btn-corrige:disabled {
+  background: lighten(#EA7E07, 10);
+}
+
+.btn-confirma.disabled, .btn-confirma:disabled {
+  background: lighten(#339900, 10);
+}
+
+.btn-number.disabled, .btn-number:disabled {
+  background: lighten($colorGray, 10);
+}
+
+#fim{
+  display:none;
+  position:absolute;
+  top:18px;
+  left:33px;
+  width:calc(100% - 66px);
+  height:calc(100% - 36px);
+  background:#D7E7E7;
+  z-index:1;
+}

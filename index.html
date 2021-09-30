@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content=""> 
+
+    <title>Urna eletrônica</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link href="css/urna.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+      <h5 class="my-0 mr-md-auto font-weight-normal">JUSTIÇA ELEITORAL</h5>
+      <nav class="my-2 my-md-0 mr-md-3"> 
+        <a class="p-2 text-dark" href="index.html">Votação</a>
+        <a class="p-2 text-dark" href="ListarCandidatos.html">Resultado da eleição</a>
+         <a class="p-2 text-dark" href="CadastrarCandidato.html">Cadastrar Candidato</a>
+      </nav>
+    </div>
+ 
+    <div class="container mt-3 mb-3 py-3">
+       
+    
+      <div class="col-12 my-2 urna">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row desktop py-4 m-3">
+    
+              <div id="fim" class="text-center">
+                <h1 class="mt-5">FIM</h1>
+                <p class="my-3 mx-4 font-weight-bold">O próximo eleitor poderá votar em 5 segundos</p>
+              </div>
+    
+              <div class="col-12">
+                <div class="row" style="position:relative;">
+                  <div class="offset-4 col-8">
+                    <h4 class="text-uppercase font-weight-bold"></h4> 
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-4">
+                    <p class="text-uppercase font-weight-bold">Número:</p>
+                  </div>
+                  <div class="col-4 col-lg-4">
+                    <input type="text" class="form-control input-dezena font-weight-bold text-uppercase text-center" disabled="disabled">
+                  </div>
+                  <div class="col-4 col-lg-4">
+                    <input type="text" class="form-control input-unidade font-weight-bold text-uppercase text-center" disabled="disabled">
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-4">
+                    <p class="text-uppercase font-weight-bold">Presidente:</p>
+                  </div>
+                  <div class="col-8">
+                    <input type="text" class="form-control nome font-weight-bold text-uppercase nome-canditato-presidente" disabled="disabled">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-4">
+                    <p class="text-uppercase font-weight-bold">Vice:</p>
+                  </div>
+                  <div class="col-8">
+                    <input type="text" class="form-control nome font-weight-bold text-uppercase nome-canditato-vice" disabled="disabled">
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-4">
+                    <p class="text-uppercase font-weight-bold">Partido:</p> 
+                  </div>
+                  <div class="col-8">
+                    <input type="text" class="form-control partido font-weight-bold text-uppercase partido-candidato" disabled="disabled">
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row teclas m-3">
+              <div class="col-4 text-center number mt-2">
+                <button class="col-12 btn btn-primary font-weight-bold btn-number">1</button>
+              </div>
+              <div class="col-4 text-center number mt-2">
+                <button class="col-12 btn btn-primary font-weight-bold btn-number">2</button>
+              </div>
+              <div class="col-4 text-center number mt-2">
+                <button class="col-12 btn btn-primary font-weight-bold btn-number">3</button>
+              </div>
+              <div class="col-4 text-center number mt-2">
+                <button class="col-12 btn btn-primary font-weight-bold btn-number">4</button>
+              </div>
+              <div class="col-4 text-center number mt-2">
+                <button class="col-12 btn btn-primary font-weight-bold btn-number">5</button>
+              </div>
+              <div class="col-4 text-center number mt-2">
+                <button class="col-12 btn btn-primary font-weight-bold btn-number">6</button>
+              </div>
+              <div class="col-4 text-center number mt-2">
+                <button class="col-12 btn btn-primary font-weight-bold btn-number">7</button>
+              </div>
+              <div class="col-4 text-center number mt-2">
+                <button class="col-12 btn btn-primary font-weight-bold btn-number">8</button>
+              </div>
+              <div class="col-4 text-center number mt-2">
+                <button class="col-12 btn btn-primary font-weight-bold btn-number">9</button>
+              </div>
+              <div class="col-md-4 text-center offset-md-4 number mt-2 mb-3">
+                <button class="col-12 btn btn-primary font-weight-bold btn-number">0</button>
+              </div>
+    
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-lg-4 mb-3">
+                    <button class="col-12 text-center text-uppercase btn font-weight-bold btn-branco">Branco</button>
+                  </div>
+                  <div class="col-lg-4 mb-3">
+                    <button class="col-12 text-center btn text-uppercase font-weight-bold btn-corrige">corrige</button>
+                  </div>
+                  <div class="col-lg-4 mb-3">
+                    <button class="col-12 text-center btn btn-primary text-uppercase font-weight-bold btn-confirma">confirma</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div> 
+    </div>
+    <audio id="confirma" src="https://res.cloudinary.com/www-canecadodev-com/video/upload/v1539475359/urna/confirma.mp3"></audio>
+    <audio id="tecla" src="https://res.cloudinary.com/www-canecadodev-com/video/upload/v1539475359/urna/tecla.mp3"></audio>
+         
+   
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/urna.js"></script>  
+  </body>
+</html>

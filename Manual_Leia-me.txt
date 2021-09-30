@@ -1,0 +1,14 @@
+Olá, para iniciar esse teste.
+Primeiro rode os seguintes comando para criação do  banco de dados:
+
+ Add-Migration - adicionando o migration na aplicação,
+ Update-Database - Criando o banco de dados com as tabelas e suas relações.
+
+Criando o banco de dados via query na pasta script  deixei o script para geração do banco de dados e suas tabelas,
+para que você consiga visualizar.
+
+Em seguida, abra a aplicação e no arquivo appsettings.json, coloque as informações do seu banco de dados
+em optionsBuilder.UseSqlServer de acordo com seu servidor e o banco que você criou.
+
+Tambem deixei uma pasta com nome de Collection, nela esta a collection do post com todas as requisições para api, utilizei-as
+para testar antes de começar a criar o front-end, para consolidar mesmo o que tinha feito no back-end.

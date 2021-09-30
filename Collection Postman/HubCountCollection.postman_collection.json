@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "7d1b4295-6c4e-45ec-aa9d-8ab9549aa995",
+		"name": "HubCountCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cadastrar candidato",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n\r\n  \"CodigoCandidato\":\"15\",\r\n  \"nomeCompleto\": \"Jefferson\",\r\n  \"nomeVice\": \"Lula vice\",\r\n  \"dataRegistro\": \"2021-09-27T00:00:00\",\r\n  \"legenda\": 13\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44378/Candidato",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44378",
+					"path": [
+						"Candidato"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar candidato",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44378/Candidato/10",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44378",
+					"path": [
+						"Candidato",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar voto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Datavoto\":\"2021-09-24\",\r\n    \"CodigoCandidato\":35\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44378/Vote",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44378",
+					"path": [
+						"Vote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obter Candidatos  Vs votos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44378/Vote",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44378",
+					"path": [
+						"Vote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obter Candidatos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44378/api/Urna/ObterVotosCandidatos",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44378",
+					"path": [
+						"api",
+						"Urna",
+						"ObterVotosCandidatos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
