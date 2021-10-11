@@ -1,0 +1,248 @@
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\appsettings.json
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\API_VOTOS.exe
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\API_VOTOS.deps.json
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\API_VOTOS.runtimeconfig.json
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\API_VOTOS.runtimeconfig.dev.json
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\API_VOTOS.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\ref\API_VOTOS.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\API_VOTOS.pdb
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.AssemblyInfoInputs.cache
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.AssemblyInfo.cs
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.csproj.CoreCompileInputs.cache
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\obj\Debug\net5.0\staticwebassets\API_VOTOS.StaticWebAssets.Manifest.cache
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\obj\Debug\net5.0\staticwebassets\API_VOTOS.StaticWebAssets.xml
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\obj\Debug\net5.0\scopedcss\bundle\API_VOTOS.styles.css
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.RazorTargetAssemblyInfo.cache
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.csproj.CopyComplete
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\obj\Debug\net5.0\ref\API_VOTOS.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.pdb
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.genruntimeconfig.cache
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Humanizer.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\marco\source\repos\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.csprojAssemblyReference.cache
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\appsettings.Development.json
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\appsettings.json
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\API_VOTOS.exe
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\API_VOTOS.deps.json
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\API_VOTOS.runtimeconfig.json
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\API_VOTOS.runtimeconfig.dev.json
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\API_VOTOS.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\ref\API_VOTOS.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\API_VOTOS.pdb
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Humanizer.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.csproj.AssemblyReference.cache
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.AssemblyInfoInputs.cache
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.AssemblyInfo.cs
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.csproj.CoreCompileInputs.cache
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.MvcApplicationPartsAssemblyInfo.cs
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.MvcApplicationPartsAssemblyInfo.cache
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\staticwebassets\API_VOTOS.StaticWebAssets.Manifest.cache
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\staticwebassets\API_VOTOS.StaticWebAssets.xml
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\scopedcss\bundle\API_VOTOS.styles.css
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.RazorTargetAssemblyInfo.cache
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.csproj.CopyComplete
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\ref\API_VOTOS.dll
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.pdb
+C:\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.genruntimeconfig.cache
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\appsettings.json
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\API_VOTOS.exe
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\API_VOTOS.deps.json
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\API_VOTOS.runtimeconfig.json
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\API_VOTOS.runtimeconfig.dev.json
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\API_VOTOS.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\ref\API_VOTOS.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\API_VOTOS.pdb
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Humanizer.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.csprojAssemblyReference.cache
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.AssemblyInfoInputs.cache
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.AssemblyInfo.cs
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.csproj.CoreCompileInputs.cache
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\staticwebassets\API_VOTOS.StaticWebAssets.Manifest.cache
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\staticwebassets\API_VOTOS.StaticWebAssets.xml
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\scopedcss\bundle\API_VOTOS.styles.css
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.RazorTargetAssemblyInfo.cache
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.csproj.CopyComplete
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\ref\API_VOTOS.dll
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.pdb
+C:\Users\marco\OneDrive\Área de Trabalho\Urna\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.genruntimeconfig.cache
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\appsettings.json
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\API_VOTOS.exe
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\API_VOTOS.deps.json
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\API_VOTOS.runtimeconfig.json
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\API_VOTOS.runtimeconfig.dev.json
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\API_VOTOS.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\ref\API_VOTOS.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\API_VOTOS.pdb
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Humanizer.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.csprojAssemblyReference.cache
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.AssemblyInfoInputs.cache
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.AssemblyInfo.cs
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.csproj.CoreCompileInputs.cache
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\staticwebassets\API_VOTOS.StaticWebAssets.Manifest.cache
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\staticwebassets\API_VOTOS.StaticWebAssets.xml
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\scopedcss\bundle\API_VOTOS.styles.css
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.RazorTargetAssemblyInfo.cache
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.csproj.CopyComplete
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\ref\API_VOTOS.dll
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.pdb
+C:\Users\marco\OneDrive\Área de Trabalho\UrnaFINAL_GIT\Urna_Eletronica\API_VOTOS\API_VOTOS\obj\Debug\net5.0\API_VOTOS.genruntimeconfig.cache

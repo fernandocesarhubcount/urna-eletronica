@@ -1,0 +1,49 @@
+
+GO
+CREATE DATABASE Urna
+
+
+
+GO
+USE Urna
+
+
+GO
+CREATE TABLE candidatos
+(
+ID_Candidato INTEGER identity(1,1) NOT NULL, 
+Nome_Completo	varchar(80) COLLATE Latin1_General_CI_AS,
+Nome_Vice	varchar(80) COLLATE Latin1_General_CI_AS,
+Data_Registro	datetime2 NOT NULL,
+Legenda	integer NOT NULL
+)
+
+GO
+CREATE TABLE votos
+(
+ID_Voto	integer	identity(1,1) NOT NULL,
+ID_Candidato	integer,
+Data_do_Voto	datetime2 NOT NULL
+)
+
+
+-- INSERIR CANDIDATO
+-- SE O SCRIPT DER PROBLEMA REMOVER O COALESCE (VERSõES ANTIGAS DO SQL NÃO POSSUEM ESSA FUNÇÃO)
+-- SUBSTITUIR POR UM NUMERO QUALQUER
+
+GO
+INSERT INTO candidatos (Nome_Completo
+                      ,Nome_Vice
+                      ,Data_Registro,Legenda) 
+values ('TESTE_PREFEITO'
+        ,'TESTE_VICE-PREFEITO'
+        ,GETDATE()
+        ,COALESCE((SELECT TOP 1 Legenda + 1 FROM candidatos order by Legenda desc),1))
+
+
+GO
+INSERT INTO votos (ID_Candidato,Data_do_Voto) VALUES(@@IDENTITY,GETDATE())
+
+
+SELECT * FROM candidatos
+SELECT * FROM votos

@@ -1,0 +1,44 @@
+-----------------------------------------------
+API_VOTOS (.NET 5)
+-----------------------------------------------
+
+1) Verificar a string de conexão em appsettings.json
+Startup.cs [Linha 37] para alterar o nome
+
+2) Escolher a forma de configuração das tabelas do BANCO (Uma das Duas apenas)
+
+Verificar se já existe um banco com o mesmo nome "Urna" antes inserido no banco
+- Como provavelmente várias pessoas estão enviando o teste pode ocorrer de já existir um banco criado anteriormente com o mesmo nome, ocasionando possiveis erros
+
+------------------
+MIGRATIONS
+------------------
+No visual studio clique em 
+FERRAMENTAS> Gerenciador de PACOTES > CONSOLE
+digite os comandos abaixo:
+
+
+Add-Migration InitialRelease
+Update-DataBase
+
+------------------
+SCRIPT SQL
+------------------
+Executar o script sql no banco de dados selecionado
+
+
+-----------------------------------------------
+FRONT END VUE.JS COM NODE
+-----------------------------------------------
+
+Executar os comandos 
+- npm install (Baixar as dependencias)
+	utilizar o comando dentro da pasta [front]
+
+- npm run serve (executar o código)
+
+
+
+
+qualquer dúvida estou a disposição!
+Atenciosamente, Marcos!
