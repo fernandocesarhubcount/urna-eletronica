@@ -1,0 +1,63 @@
+<br/>
+<br/>
+<form class="form-register example-container" [formGroup]="novoCandidatoForm" (submit)="cadastrar()">
+  <h4 class="titulo">Cadastro Candidato</h4>
+
+  <mat-form-field class="full-width" appearance="outline">
+    <mat-label>Nome Completo</mat-label>
+    <input type="text" matInput formControlName="nomeCompleto">
+
+    <mat-hint
+      *ngIf="novoCandidatoForm.controls.nomeCompleto.valid && !novoCandidatoForm.controls.nomeCompleto.pristine"
+      class="text-green">OK</mat-hint>
+
+    <mat-hint class="text-red"
+      *ngIf="novoCandidatoForm.controls.nomeCompleto.invalid && !novoCandidatoForm.controls.nomeCompleto.pristine"
+      class="text-red">Informe informe um nome maior que 2 caracteres</mat-hint>
+  </mat-form-field>
+
+  <br/>
+  <br/>
+
+  <mat-form-field class="full-width" appearance="outline">
+    <mat-label>Nome do Vice</mat-label>
+    <input type="text" matInput formControlName="nomeVice">
+    <mat-hint
+      *ngIf="novoCandidatoForm.controls.nomeVice.valid && !novoCandidatoForm.controls.nomeVice.pristine"
+      class="text-green">OK</mat-hint>
+
+    <mat-hint
+      *ngIf="novoCandidatoForm.controls.nomeVice.invalid && !novoCandidatoForm.controls.nomeVice.pristine"
+      class="text-red">Informe informe um nome maior que 2 caracteres</mat-hint>
+  </mat-form-field>
+
+  <br/>
+  <br/>
+
+  <mat-form-field class="full-width" appearance="outline">
+    <mat-label>Legenda do Candidato</mat-label>
+    <input type="number" matInput formControlName="legenda" maxlength="2" max="99" (ngModelChange)="verificarLegenda($event)">
+
+    <mat-hint class="text-red"
+      *ngIf="legendaExistente" class="text-red">
+      A legenda já foi cadastrada por outro candidato</mat-hint>
+
+    <mat-hint class="text-red"
+      *ngIf="novoCandidatoForm.controls.legenda.invalid && !novoCandidatoForm.controls.legenda.pristine"
+      class="text-red">A legenda deve ser de 01 à 99</mat-hint>
+
+    <mat-hint
+      *ngIf="(novoCandidatoForm.controls.legenda.valid && !novoCandidatoForm.controls.legenda.pristine) && !legendaExistente"
+      class="text-green">OK</mat-hint>
+  </mat-form-field>
+  <br />
+  <br />
+  <div class="example-button-row">
+    <button mat-raised-button color="primary" [disabled]="novoCandidatoForm.invalid">Cadastrar</button>
+  </div>
+
+</form>
+<br>
+<div class="area-tabela">
+  <app-tabela [dados]="candidatos$" ></app-tabela>
+</div>

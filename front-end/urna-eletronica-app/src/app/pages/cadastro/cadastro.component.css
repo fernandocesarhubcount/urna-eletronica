@@ -1,0 +1,33 @@
+.form-register {
+  background-color: #ffffff;
+  height: 35m;
+  width: 350px;
+  /* height: 100%; */
+  border: 2px solid rgb(4, 1, 194);
+  margin: auto;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.titulo {
+  text-transform: uppercase;
+  color: rgb(4, 1, 194);
+}
+
+.text-green {
+  color: green;
+  font-weight: bold;
+  /* margin: 20px auto; */
+}
+.text-red {
+  color: red;
+  font-weight: bold;
+  /* margin: 20px auto; */
+}
+
+.area-tabela {
+  width: 90%;
+  background-color: red;
+  margin: 10px auto;
+}
