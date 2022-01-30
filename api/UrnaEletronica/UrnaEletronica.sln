@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrnaEletronica", "UrnaEletronica\UrnaEletronica.csproj", "{3BBDF213-481B-4BEB-AEC4-711EDE135677}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UrnaEletronica", "UrnaEletronica\UrnaEletronica.csproj", "{3BBDF213-481B-4BEB-AEC4-711EDE135677}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrnaEletronicaTeste", "UrnaEletronicaTeste\UrnaEletronicaTeste.csproj", "{DE9B6F4F-1C5D-4C37-9335-A3176E52CF57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{3BBDF213-481B-4BEB-AEC4-711EDE135677}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BBDF213-481B-4BEB-AEC4-711EDE135677}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BBDF213-481B-4BEB-AEC4-711EDE135677}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE9B6F4F-1C5D-4C37-9335-A3176E52CF57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE9B6F4F-1C5D-4C37-9335-A3176E52CF57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE9B6F4F-1C5D-4C37-9335-A3176E52CF57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE9B6F4F-1C5D-4C37-9335-A3176E52CF57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

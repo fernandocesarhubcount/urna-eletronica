@@ -1,0 +1,182 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Programacao\\CSharp\\urna-eletronica\\urna-eletronica\\api\\UrnaEletronica\\UrnaEletronicaTeste\\UrnaEletronicaTeste.csproj": {}
+  },
+  "projects": {
+    "C:\\Programacao\\CSharp\\urna-eletronica\\urna-eletronica\\api\\UrnaEletronica\\UrnaEletronicaTeste\\UrnaEletronicaTeste.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Programacao\\CSharp\\urna-eletronica\\urna-eletronica\\api\\UrnaEletronica\\UrnaEletronicaTeste\\UrnaEletronicaTeste.csproj",
+        "projectName": "UrnaEletronicaTeste",
+        "projectPath": "C:\\Programacao\\CSharp\\urna-eletronica\\urna-eletronica\\api\\UrnaEletronica\\UrnaEletronicaTeste\\UrnaEletronicaTeste.csproj",
+        "packagesPath": "C:\\Users\\marlo\\.nuget\\packages\\",
+        "outputPath": "C:\\Programacao\\CSharp\\urna-eletronica\\urna-eletronica\\api\\UrnaEletronica\\UrnaEletronicaTeste\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\marlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Programacao\\CSharp\\urna-eletronica\\urna-eletronica\\api\\UrnaEletronica\\UrnaEletronica\\UrnaEletronica.csproj": {
+                "projectPath": "C:\\Programacao\\CSharp\\urna-eletronica\\urna-eletronica\\api\\UrnaEletronica\\UrnaEletronica\\UrnaEletronica.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[1.1.18, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Programacao\\CSharp\\urna-eletronica\\urna-eletronica\\api\\UrnaEletronica\\UrnaEletronica\\UrnaEletronica.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Programacao\\CSharp\\urna-eletronica\\urna-eletronica\\api\\UrnaEletronica\\UrnaEletronica\\UrnaEletronica.csproj",
+        "projectName": "UrnaEletronica",
+        "projectPath": "C:\\Programacao\\CSharp\\urna-eletronica\\urna-eletronica\\api\\UrnaEletronica\\UrnaEletronica\\UrnaEletronica.csproj",
+        "packagesPath": "C:\\Users\\marlo\\.nuget\\packages\\",
+        "outputPath": "C:\\Programacao\\CSharp\\urna-eletronica\\urna-eletronica\\api\\UrnaEletronica\\UrnaEletronica\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\marlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "FluentValidator": {
+              "target": "Package",
+              "version": "[2.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.TestPlatform": {
+              "target": "Package",
+              "version": "[17.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

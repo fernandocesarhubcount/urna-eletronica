@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Programacao\\CSharp\\UrnaEletr\\urna-eletronica\\api\\UrnaEletronica\\UrnaEletronica\\UrnaEletronica.csproj": {}
+    "C:\\Programacao\\CSharp\\urna-eletronica\\urna-eletronica\\api\\UrnaEletronica\\UrnaEletronica\\UrnaEletronica.csproj": {}
   },
   "projects": {
-    "C:\\Programacao\\CSharp\\UrnaEletr\\urna-eletronica\\api\\UrnaEletronica\\UrnaEletronica\\UrnaEletronica.csproj": {
+    "C:\\Programacao\\CSharp\\urna-eletronica\\urna-eletronica\\api\\UrnaEletronica\\UrnaEletronica\\UrnaEletronica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Programacao\\CSharp\\UrnaEletr\\urna-eletronica\\api\\UrnaEletronica\\UrnaEletronica\\UrnaEletronica.csproj",
+        "projectUniqueName": "C:\\Programacao\\CSharp\\urna-eletronica\\urna-eletronica\\api\\UrnaEletronica\\UrnaEletronica\\UrnaEletronica.csproj",
         "projectName": "UrnaEletronica",
-        "projectPath": "C:\\Programacao\\CSharp\\UrnaEletr\\urna-eletronica\\api\\UrnaEletronica\\UrnaEletronica\\UrnaEletronica.csproj",
+        "projectPath": "C:\\Programacao\\CSharp\\urna-eletronica\\urna-eletronica\\api\\UrnaEletronica\\UrnaEletronica\\UrnaEletronica.csproj",
         "packagesPath": "C:\\Users\\marlo\\.nuget\\packages\\",
-        "outputPath": "C:\\Programacao\\CSharp\\UrnaEletr\\urna-eletronica\\api\\UrnaEletronica\\UrnaEletronica\\obj\\",
+        "outputPath": "C:\\Programacao\\CSharp\\urna-eletronica\\urna-eletronica\\api\\UrnaEletronica\\UrnaEletronica\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -41,6 +41,40 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "FluentValidator": {
+              "target": "Package",
+              "version": "[2.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.TestPlatform": {
+              "target": "Package",
+              "version": "[17.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

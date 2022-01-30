@@ -10,6 +10,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using UrnaEletronica.DAL;
+using UrnaEletronica.DAL.Repositories;
+using UrnaEletronica.DAL.Repositories.Interfaces;
 
 namespace UrnaEletronica
 {
@@ -26,7 +29,31 @@ namespace UrnaEletronica
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddMvc().AddJsonOptions(options =>
+            {
+                options.JsonSerializerOptions.WriteIndented = true;
+            });
+            services.AddMvc(options => options.EnableEndpointRouting = false);
+
+
+            services.AddScoped<UrnaEletronicaContext, UrnaEletronicaContext>();
+            services.AddTransient<ICandidatoRepositorio, CandidatoRepositorio>();
+            services.AddTransient<IVotoRepositorio, VotoRepositorio>();
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("urna", builder =>
+                {
+                    builder
+                    .AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+                });
+            });
+            
         }
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -36,9 +63,12 @@ namespace UrnaEletronica
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
+            app.UseMvc();
 
             app.UseRouting();
+
+            app.UseCors("urna");
 
             app.UseAuthorization();
 
