@@ -1,0 +1,9 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.link {
+  text-decoration: none;
+  margin: 0px 20px;
+  color: white;
+}
