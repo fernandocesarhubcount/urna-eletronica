@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="caixa">
+      <div class="display">
+        <div *ngIf="!Fim; else telaFim" class="dados-candidato">
+          <h1 class="meu-voto">MEU VOTO PARA</h1>
+          <h2 class="center">PREFEITO</h2>
+          <input class="input-digito" type="number" [value]="digito1" readonly maxlength="1" />
+          <input class="input-digito" type="number" [value]="digito2" readonly maxlength="1" />
+          <h3 class="texto-nome">Nome: <span class="center">{{candidato?.nomeCompleto}}</span></h3>
+          <h3 class="texto-nome">Vice: <span class="center">{{candidato?.nomeVice}}</span></h3>
+        </div>
+
+        <ng-template #telaFim >
+          <p class="fim center">FIM</p>
+          <div class="example-button-row">
+            <button mat-raised-button class="espacamento-botao center" (click)="InciarVotacao()">Reiniciar Votação</button>
+          </div>
+        </ng-template>
+      </div>
+
+      <div class="container-botoes">
+        <h1>Justiça Eleitora</h1>
+        <div class="caixa-botoes">
+          <div class="example-button-row">
+            <button mat-raised-button class="botao-numero espacamento-botao" (click)="addCodigo('1')">1</button>
+            <button mat-raised-button class="botao-numero espacamento-botao" (click)="addCodigo('2')">2</button>
+            <button mat-raised-button class="botao-numero espacamento-botao" (click)="addCodigo('3')">3</button>
+          </div>
+
+          <div class="example-button-row">
+            <button mat-raised-button class="botao-numero espacamento-botao" (click)="addCodigo('4')">4</button>
+            <button mat-raised-button class="botao-numero espacamento-botao" (click)="addCodigo('5')">5</button>
+            <button mat-raised-button class="botao-numero espacamento-botao" (click)="addCodigo('6')">6</button>
+          </div>
+
+          <div class="example-button-row">
+            <button mat-raised-button class="botao-numero espacamento-botao" (click)="addCodigo('7')">7</button>
+            <button mat-raised-button class="botao-numero espacamento-botao" (click)="addCodigo('8')">8</button>
+            <button mat-raised-button class="botao-numero espacamento-botao" (click)="addCodigo('9')">9</button>
+          </div>
+
+          <div class="example-button-row">
+            <button mat-raised-button class="botao-numero espacamento-botao" (click)="addCodigo('0')">0</button>
+          </div>
+
+          <div class="example-button-row">
+            <button mat-raised-button class="espacamento-botao" (click)="criarVotoEmBraco()">BRANCO</button>
+            <button mat-raised-button class="botao-corrigir espacamento-botao" (click)="corrigir()">CORRIGIR</button>
+            <button mat-raised-button class="botao-confirmar espacamento-botao" (click)="confirmarVoto()">CONFIRMA</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
