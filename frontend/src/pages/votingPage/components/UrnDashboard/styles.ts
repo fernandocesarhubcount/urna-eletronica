@@ -9,6 +9,17 @@ export const UrnDashboardStyle = styled.div`
   align-items: center;
   margin-left: 33.9rem;
   margin-top: 9rem;
+  font-family: Roboto;
+
+  .candidateInfos {
+    display: flex;
+    flex-direction: row;
+    color: white;
+
+    h2 {
+      margin: 1rem;
+    }
+  }
 
   input {
     width: 15.7rem;

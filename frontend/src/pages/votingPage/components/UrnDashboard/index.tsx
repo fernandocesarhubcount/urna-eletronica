@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { toast } from "react-toastify";
 import { candidateRoute, votesRoute } from "../../../../services";
 import { Candidate } from "../../../resultsDashboard/types";
 import { UrnDashboardStyle } from "./styles";
@@ -6,16 +7,19 @@ import { UrnDashboardStyle } from "./styles";
 export function UrnDashboard() {
   const [value, setValue] = useState<number[]>([]);
   const [subTitle, setSubTitle] = useState("");
+  const [candidateInfos, setCandidateInfos] = useState<Candidate[]>([]);
   const [candidates, setCandidates] = useState<Candidate[]>([]);
-  const [candidate, setCandidate] = useState<Candidate>();
-
-  async function handleRegisterNewVote() {
-    await votesRoute.post("/register", voteData);
-  }
 
   useEffect(() => {
     candidateRoute.get("/").then((response) => setCandidates(response.data));
   }, []);
+
+  async function handleRegisterNewVote() {
+    await votesRoute.post("/register", voteData);
+
+    toast.success("Voto computado.");
+    window.location.reload();
+  }
 
   let voteData = {
     candidateSubTitle: parseInt(subTitle),
@@ -26,11 +30,32 @@ export function UrnDashboard() {
       setSubTitle(value.join(""));
     }
 
+    function getCandidate() {
+      const filteredCandidate = candidates.filter(
+        (candidate: Candidate) => candidate.subTitle === Number(subTitle)
+      );
+
+      setCandidateInfos(filteredCandidate);
+    }
+
     setSubTitleValue();
-  }, [value]);
+    getCandidate();
+  }, [value, candidates, subTitle]);
+
+  console.log(candidateInfos);
 
   return (
     <UrnDashboardStyle>
+      {!!candidateInfos.length && (
+        <div className="candidateInfos">
+          <h2>Candidato:</h2>
+          <h2>{candidateInfos[0].fullName}</h2>
+          <h2>Vice:</h2>
+          <h2>{candidateInfos[0].viceFullName}</h2>
+          <h2>Legenda:</h2>
+          <h2>{candidateInfos[0].subTitle}</h2>
+        </div>
+      )}
       <input type="text" value={subTitle} readOnly />
       <div className="buttons">
         <button

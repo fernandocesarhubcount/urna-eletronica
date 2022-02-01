@@ -8,6 +8,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import { Candidate } from "../../types";
 import { TableContainerStyle } from "./styles";
 import { candidateRoute } from "../../../../services";
+import { toast } from "react-toastify";
 
 interface CandidatesTableProps {
   candidates: Candidate[];
@@ -37,9 +38,16 @@ export default function CandidatesTable({ candidates }: CandidatesTableProps) {
               <IconButton
                 aria-label="delete"
                 onClick={() => {
-                  candidateRoute.delete(
-                    `/delete?candidateSubTitle=${candidate.subTitle}`
-                  );
+                  try {
+                    candidateRoute.delete(
+                      `/delete?candidateSubTitle=${candidate.subTitle}`
+                    );
+
+                    toast.success("Candidato deletado com sucesso!");
+                    window.location.reload();
+                  } catch (err) {
+                    toast.error("Erro ao deletar candidato.");
+                  }
                 }}
               >
                 <DeleteIcon />
