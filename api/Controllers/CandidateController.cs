@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using api.Controllers.DTOs.Request;
 using api.Controllers.Mapping;
 using api.Models;
@@ -42,7 +43,7 @@ namespace api.Controllers
         /// <summary>
         /// Delete an existing candidate
         /// </summary>
-        /// <param name="candidateLegend"></param>
+        /// <param name="candidateSubTitle"></param>
         /// <returns>
         /// Deleted candidate
         /// </returns>
@@ -50,11 +51,28 @@ namespace api.Controllers
         /// <response code="400">Bad Request</response>
         [HttpDelete]
         [Route("[action]")]
-        public ActionResult Delete([FromQuery] int candidateLegend)
+        public ActionResult Delete([FromQuery] int candidateSubTitle)
         {
-            _candidateService.Delete(candidateLegend);
+            _candidateService.Delete(candidateSubTitle);
 
             return StatusCode(200);
+        }
+
+        /// <summary>
+        /// Get all candidates
+        /// </summary>
+        /// <returns>
+        /// all candidates
+        /// </returns>
+        /// <response code="200">Success</response>
+        /// <response code="400">Bad Request</response>
+        [HttpGet]
+        [Route("")]
+        public ActionResult Get()
+        {
+            List<Candidate> candidates = _candidateService.Get();
+
+            return StatusCode(200, candidates);
         }
     }
 }

@@ -21,13 +21,13 @@ namespace api.Services
         {
             try
             {
-                Candidate candidate = _candidateRepository.GetCandidateByLegend(vote.CandidateLegend);
+                Candidate candidate = _candidateRepository.GetCandidateBySubTitle(vote.CandidateSubTitle);
 
                 if (candidate == null)
                     throw new Exception("Candidato inválido");
 
                 vote = Vote.Create(
-                            vote.CandidateLegend
+                            vote.CandidateSubTitle
                             );
 
                 _voteRepository.Save(vote);

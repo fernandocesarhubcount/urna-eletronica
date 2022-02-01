@@ -27,5 +27,12 @@ namespace api.Repositories
 
             return voteList;
         }
+
+        public List<Vote> GetVotesByCandidate(int candidateSubTitle)
+        {
+            List<Vote> voteList = _context.Votes.Where(votes => votes.CandidateSubTitle == candidateSubTitle).ToList();
+
+            return voteList;
+        }
     }
 }

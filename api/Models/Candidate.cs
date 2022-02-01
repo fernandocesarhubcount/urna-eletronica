@@ -6,7 +6,7 @@ namespace api.Models
 {
     public class Candidate : BaseEntity
     {
-        public int Legend { get; set; }
+        public int SubTitle { get; set; }
 
         public string FullName { get; set; }
 
@@ -14,13 +14,13 @@ namespace api.Models
 
         public List<Vote> Votes { get; set; }
 
-        public static Candidate Create(string fullName, string viceFullName, int legend)
+        public static Candidate Create(string fullName, string viceFullName, int subTitle)
         {
             return new()
             {
                 FullName = fullName,
                 ViceFullName = viceFullName,
-                Legend = legend,
+                SubTitle = subTitle,
                 CreationDate = DateTime.Now
             };
         }

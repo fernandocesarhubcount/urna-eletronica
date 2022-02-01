@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using api.Models;
 using api.Repositories.Interface;
 using api.Services.Interface;
@@ -9,10 +10,12 @@ namespace api.Services
     public class CandidateService : ICandidateService
     {
         private readonly ICandidateRepository _candidateRepository;
+        private readonly IVoteRepository _voteRepository;
         private readonly CandidateValidator _validator;
-        public CandidateService(ICandidateRepository candidateRepository)
+        public CandidateService(ICandidateRepository candidateRepository, IVoteRepository voteRepository)
         {
             _candidateRepository = candidateRepository;
+            _voteRepository = voteRepository;
             _validator = new CandidateValidator();
         }
 
@@ -20,7 +23,7 @@ namespace api.Services
         {
             try
             {
-                if (Convert.ToBoolean(_candidateRepository.GetCandidateByLegend(candidate.Legend)))
+                if (Convert.ToBoolean(_candidateRepository.GetCandidateBySubTitle(candidate.SubTitle)))
                     throw new Exception("Já existe um candidato com essa legenda.");
 
                 _validator.Validate(candidate);
@@ -28,7 +31,7 @@ namespace api.Services
                 candidate = Candidate.Create(
                                              candidate.FullName,
                                              candidate.ViceFullName,
-                                             candidate.Legend
+                                             candidate.SubTitle
                                              );
 
                 _candidateRepository.Save(candidate);
@@ -39,11 +42,11 @@ namespace api.Services
             }
         }
 
-        public void Delete(int candidateLegend)
+        public void Delete(int candidateSubTitle)
         {
             try
             {
-                Candidate candidate = _candidateRepository.GetCandidateByLegend(candidateLegend);
+                Candidate candidate = _candidateRepository.GetCandidateBySubTitle(candidateSubTitle);
 
                 if (candidate == null)
                     throw new Exception("Candidato inexistente");
@@ -54,6 +57,17 @@ namespace api.Services
             {
                 throw;
             }
+        }
+
+        public List<Candidate> Get()
+        {
+            List<Candidate> candidates = _candidateRepository.Get();
+
+            foreach (Candidate candidate in candidates)
+                candidate.Votes = _voteRepository.GetVotesByCandidate(candidate.SubTitle);
+
+
+            return candidates;
         }
     }
 }

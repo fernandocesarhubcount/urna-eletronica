@@ -16,7 +16,7 @@ namespace api.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Candidate>()
-                        .HasKey(candidate => candidate.Legend);
+                        .HasKey(candidate => candidate.SubTitle);
 
             modelBuilder.Entity<Candidate>()
                         .Property(candidate => candidate.FullName)
@@ -27,7 +27,7 @@ namespace api.Data
                         .IsRequired();
 
             modelBuilder.Entity<Candidate>()
-                        .Property(candidate => candidate.Legend)
+                        .Property(candidate => candidate.SubTitle)
                         .IsRequired();
 
             modelBuilder.Entity<Vote>()

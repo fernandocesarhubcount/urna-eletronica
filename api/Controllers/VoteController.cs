@@ -49,7 +49,7 @@ namespace api.Controllers
         /// <response code="200">Success</response>
         /// <response code="400">Bad Request</response>
         [HttpGet]
-        [Route("[action]")]
+        [Route("")]
         public ActionResult Get()
         {
             List<Vote> votes = _voteService.Get();

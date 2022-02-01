@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using api.Data;
 using api.Models;
@@ -14,9 +15,9 @@ namespace api.Repositories
             _context = context;
         }
 
-        public Candidate GetCandidateByLegend(int candidateLegend)
+        public Candidate GetCandidateBySubTitle(int candidateSubTitle)
         {
-            Candidate candidate = _context.Candidates.FirstOrDefault(candidate => candidate.Legend == candidateLegend);
+            Candidate candidate = _context.Candidates.FirstOrDefault(candidate => candidate.SubTitle == candidateSubTitle);
 
             return candidate;
         }
@@ -31,6 +32,13 @@ namespace api.Repositories
         {
             _context.Remove(candidate);
             _context.SaveChanges();
+        }
+
+        public List<Candidate> Get()
+        {
+            List<Candidate> candidates = _context.Candidates.ToList();
+
+            return candidates;
         }
     }
 }

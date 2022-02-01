@@ -6,10 +6,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using api.Data;
 
-namespace api.Data.Migrations
+namespace api.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20220130184524_CreatingTables")]
+    [Migration("20220201002823_CreatingTables")]
     partial class CreatingTables
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -20,7 +20,7 @@ namespace api.Data.Migrations
 
             modelBuilder.Entity("api.Models.Candidate", b =>
                 {
-                    b.Property<int>("Legend")
+                    b.Property<int>("SubTitle")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
@@ -35,7 +35,7 @@ namespace api.Data.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.HasKey("Legend");
+                    b.HasKey("SubTitle");
 
                     b.ToTable("Candidates");
                 });
@@ -46,7 +46,7 @@ namespace api.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("CandidateLegend")
+                    b.Property<int>("CandidateSubTitle")
                         .HasColumnType("INTEGER");
 
                     b.Property<DateTime>("CreationDate")
@@ -54,7 +54,7 @@ namespace api.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CandidateLegend");
+                    b.HasIndex("CandidateSubTitle");
 
                     b.ToTable("Votes");
                 });
@@ -63,7 +63,7 @@ namespace api.Data.Migrations
                 {
                     b.HasOne("api.Models.Candidate", null)
                         .WithMany("Votes")
-                        .HasForeignKey("CandidateLegend")
+                        .HasForeignKey("CandidateSubTitle")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

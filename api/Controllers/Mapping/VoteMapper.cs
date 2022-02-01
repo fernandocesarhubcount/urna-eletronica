@@ -9,7 +9,7 @@ namespace api.Controllers.Mapping
         {
             return new()
             {
-                CandidateLegend = NewVoteDTO.CandidateLegend
+                CandidateSubTitle = NewVoteDTO.CandidateSubTitle
             };
         }
     }

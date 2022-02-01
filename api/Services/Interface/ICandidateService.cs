@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using api.Models;
 
 namespace api.Services.Interface
@@ -6,6 +7,8 @@ namespace api.Services.Interface
     {
         void Save(Candidate candidate);
 
-        void Delete(int candidateLegend);
+        void Delete(int candidateSubTitle);
+
+        List<Candidate> Get();
     }
 }

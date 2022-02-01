@@ -6,6 +6,6 @@ namespace api.Controllers.DTOs.Request
 
         public string ViceFullName { get; set; }
 
-        public int Legend { get; set; }
+        public int SubTitle { get; set; }
     }
 }

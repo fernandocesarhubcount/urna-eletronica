@@ -13,10 +13,10 @@ namespace api.Services.Validator
             if (String.IsNullOrEmpty(candidate.ViceFullName))
                 throw new Exception("O nome do vice é obrigatório.");
 
-            if (candidate.Legend == 0)
+            if (candidate.SubTitle == 0)
                 throw new Exception("A legenda é obrigatória.");
 
-            if (candidate.Legend.ToString().Length != 2)
+            if (candidate.SubTitle.ToString().Length != 2)
                 throw new Exception("A legenda deve ter dois digitos");
         }
     }

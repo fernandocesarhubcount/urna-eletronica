@@ -7,13 +7,13 @@ namespace api.Models
     {
         public int Id { get; set; }
 
-        public int CandidateLegend { get; set; }
+        public int CandidateSubTitle { get; set; }
 
-        public static Vote Create(int candidateLegend)
+        public static Vote Create(int candidateSubTitle)
         {
             return new()
             {
-                CandidateLegend = candidateLegend,
+                CandidateSubTitle = candidateSubTitle,
                 CreationDate = DateTime.Now
             };
         }

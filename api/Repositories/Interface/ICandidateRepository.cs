@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using api.Models;
 
 namespace api.Repositories.Interface
@@ -8,6 +9,8 @@ namespace api.Repositories.Interface
 
         void Delete(Candidate candidate);
 
-        Candidate GetCandidateByLegend(int candidateLegend);
+        Candidate GetCandidateBySubTitle(int candidateSubTitle);
+
+        List<Candidate> Get();
     }
 }

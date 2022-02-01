@@ -11,7 +11,7 @@ namespace api.Controllers.Mapping
             {
                 FullName = createNewCandidateDTO.FullName,
                 ViceFullName = createNewCandidateDTO.ViceFullName,
-                Legend = createNewCandidateDTO.Legend
+                SubTitle = createNewCandidateDTO.SubTitle
             };
         }
     }

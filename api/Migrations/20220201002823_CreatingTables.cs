@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace api.Data.Migrations
+namespace api.Migrations
 {
     public partial class CreatingTables : Migration
     {
@@ -11,7 +11,7 @@ namespace api.Data.Migrations
                 name: "Candidates",
                 columns: table => new
                 {
-                    Legend = table.Column<int>(type: "INTEGER", nullable: false)
+                    SubTitle = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     FullName = table.Column<string>(type: "TEXT", nullable: false),
                     ViceFullName = table.Column<string>(type: "TEXT", nullable: false),
@@ -19,7 +19,7 @@ namespace api.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Candidates", x => x.Legend);
+                    table.PrimaryKey("PK_Candidates", x => x.SubTitle);
                 });
 
             migrationBuilder.CreateTable(
@@ -28,24 +28,24 @@ namespace api.Data.Migrations
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    CandidateLegend = table.Column<int>(type: "INTEGER", nullable: false),
+                    CandidateSubTitle = table.Column<int>(type: "INTEGER", nullable: false),
                     CreationDate = table.Column<DateTime>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Votes", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Votes_Candidates_CandidateLegend",
-                        column: x => x.CandidateLegend,
+                        name: "FK_Votes_Candidates_CandidateSubTitle",
+                        column: x => x.CandidateSubTitle,
                         principalTable: "Candidates",
-                        principalColumn: "Legend",
+                        principalColumn: "SubTitle",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Votes_CandidateLegend",
+                name: "IX_Votes_CandidateSubTitle",
                 table: "Votes",
-                column: "CandidateLegend");
+                column: "CandidateSubTitle");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

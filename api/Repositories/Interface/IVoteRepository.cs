@@ -8,5 +8,7 @@ namespace api.Repositories.Interface
         void Save(Vote vote);
 
         List<Vote> Get();
+
+        List<Vote> GetVotesByCandidate(int candidateSubTitle);
     }
 }
