@@ -1,0 +1,55 @@
+<header>
+  <nav
+    class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
+  >
+    <div class="container">
+      <!-- "Logo" da aplicação -->
+      <a class="navbar-brand" [routerLink]="['/']">Urna</a>
+
+      <!-- Botão Colapsável -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target=".navbar-collapse"
+        aria-label="Toggle navigation"
+        [attr.aria-expanded]="isExpanded"
+        (click)="toggle()"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Conteúdo Colapsável da Navbar -->
+      <div
+        class="navbar-collapse collapse d-sm-inline-flex justify-content-end"
+        [ngClass]="{ show: isExpanded }"
+      >
+        <ul class="navbar-nav flex-grow">
+          <!-- Botão Home (Urna) -->
+          <li
+            class="nav-item"
+            [routerLinkActive]="['link-active']"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <a class="nav-link text-dark" [routerLink]="['/']">Home</a>
+          </li>
+
+          <!-- Botão Cadastro -->
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/cadastro']"
+              >Cadastro</a
+            >
+          </li>
+
+          <!-- Botão Dashboard -->
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/dashboard']"
+              >Dashboard</a
+            >
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

@@ -1,0 +1,142 @@
+<!-- Mensagens de Aviso -->
+<div *ngIf="msgAtual == MsgStatus.CandidateNotFilled" class="alert alert-danger alert-dismissible fade show" role="alert">
+    <h6 class="alert-heading">Legenda não preenchida</h6>
+    <p>Você deve preencher a legenda do candidato.</p>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="hideMensagem()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<div *ngIf="msgAtual == MsgStatus.GenericVoteError" class="alert alert-danger alert-dismissible fade show" role="alert">
+    <h6 class="alert-heading">Voto não enviado</h6>
+    <p>Não foi possível enviar o voto ao servidor. Verifique sua conexão e tente novamente.</p>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="hideMensagem()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<div *ngIf="msgAtual == MsgStatus.VoteSuccess" class="alert alert-success alert-dismissible fade show" role="alert">
+    <h6 class="alert-heading">Voto registrado com sucesso!</h6>
+    <p>O voto foi computado com sucesso no servidor.</p>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="hideMensagem()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<!-- Urna - Votação -->
+<div *ngIf="isTelaVoto" class="container-fluid h-100 urna-container"> 
+    <div class="row h-100">
+        <!-- Tela -->
+        <div class="col d-flex flex-column">
+            <!-- Texto de presidente -->
+            <h4>SEU VOTO PARA</h4>
+            <h3 class="text-center">PRESIDENTE</h3>
+            <div class="row h-15"></div>
+            <div class="row h-50">
+                <!-- Informações relevantes do display -->
+                <div class="col">
+                    <div class="row row-digito-urna">
+                        <h5 class="texto-digito-urna">Número:</h5>
+                        <div class="borda-digito-urna"><p class="digito-urna">{{decDigit}}</p></div>
+                        <div class="borda-digito-urna"><p class="digito-urna">{{unitDigit}}</p></div>
+                    </div>
+                    <div class="row row-digito-urna">
+                        <h5 class="texto-digito-urna">Nome:</h5>
+                        <h4>{{nomeCandidato}}</h4>
+                    </div>
+                    <div class="row row-digito-urna">
+                        <h5 class="texto-digito-urna">Nome do Vice:</h5>
+                        <h4>{{nomeVice}}</h4>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="row flex-grow-1">
+                <div class="col">
+                    <h5>Aperte a tecla:</h5>
+                    <br>
+                    <h5>VERDE para CONFIRMAR</h5>
+                    <h5>LARANJA para CORRIGIR</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- Divisória entre display e teclado da urna-->
+        <div class="col-1 h-100"></div>
+
+        <!-- Teclado -->
+        <div class="col-4 h-100 d-flex flex-column">
+            <div class="row justica-header">
+                <div class="col">
+                    <img src="/assets/img/justica.png" alt="image" width="80px" height="80px">
+                </div>
+                <div class="col-4 justica-text-col">
+                    <p class="justica-text">
+                        JUSTIÇA
+                        <br>
+                        ELEITORAL
+                    </p>
+                </div>
+
+            </div>
+            <div class="row flex-grow-1 urna-keyboard">
+                <div class="col h-100 d-flex flex-column">
+                    <!-- Numpad -->
+                    <div class="row urna-numpad">
+                        <div class="col h-100">
+                            <!-- Number button rows -->
+                            <div class="row h-25">
+                                <div *ngFor="let item of intervalo(3); let i = index" class="col urna-button-col">
+                                    <button type="button" class="btn btn-dark urna-number-button" (click)="onNumberClick(i+1)" >{{i+1}}</button>
+                                </div>
+                            </div>
+                            <div class="row h-25">
+                                <div *ngFor="let item of intervalo(3); let i = index" class="col urna-button-col">
+                                    <button type="button" class="btn btn-dark urna-number-button" (click)="onNumberClick(i+4)" >{{i+4}}</button>
+                                </div> 
+                            </div>
+                            <div class="row h-25">
+                                <div *ngFor="let item of intervalo(3); let i = index" class="col urna-button-col">
+                                    <button type="button" class="btn btn-dark urna-number-button" (click)="onNumberClick(i+7)" >{{i+7}}</button>
+                                </div>
+                            </div>
+                            <div class="row h-25">
+                                <div class="col urna-button-col">
+                                    <button type="button" class="btn btn-dark urna-number-button" (click)="onNumberClick(0)" >0</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botões de Ação -->
+                    <div class="row flex-grow-1">
+                        <div class="col urna-button-col">
+                            <button type="button" class="btn btn-light" (click)="onBranco()">BRANCO</button>
+                        </div>
+                        <div class="col urna-button-col">
+                            <button type="button" class="btn btn-danger" (click)="onCorrige()">CORRIGE</button>
+                        </div>
+                        <div class="col urna-button-col">
+                            <button type="button" class="btn btn-success" (click)="onConfirma()">CONFIRMA</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Urna - Fim -->
+<div *ngIf="!isTelaVoto" class="container-fluid h-100 fim-urna-container"> 
+    <div class="row h-100">
+        <!-- Tela -->
+        <div class="col fim-urna-text">
+            <div class="row">
+                <h1>FIM</h1>
+            </div>
+            <div class="row">
+                <button class="btn btn-secondary" type="button" (click)="showTelaVoto()">Reiniciar votação</button>
+            </div>
+        </div>
+    </div>
+</div>

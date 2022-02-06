@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Urna", "Urna\Urna.csproj", "{A2CEBE3A-D348-43E6-80B3-A4F1E02CB623}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Urna.Core", "Urna.Core\Urna.Core.csproj", "{942D986F-064D-4671-A91F-DECFF47DA6A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Urna.Data", "Urna.Data\Urna.Data.csproj", "{C36A00FD-1521-48FA-99FB-7C02EEDA9F3C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2CEBE3A-D348-43E6-80B3-A4F1E02CB623}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2CEBE3A-D348-43E6-80B3-A4F1E02CB623}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2CEBE3A-D348-43E6-80B3-A4F1E02CB623}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2CEBE3A-D348-43E6-80B3-A4F1E02CB623}.Release|Any CPU.Build.0 = Release|Any CPU
+		{942D986F-064D-4671-A91F-DECFF47DA6A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{942D986F-064D-4671-A91F-DECFF47DA6A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{942D986F-064D-4671-A91F-DECFF47DA6A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{942D986F-064D-4671-A91F-DECFF47DA6A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C36A00FD-1521-48FA-99FB-7C02EEDA9F3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C36A00FD-1521-48FA-99FB-7C02EEDA9F3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C36A00FD-1521-48FA-99FB-7C02EEDA9F3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C36A00FD-1521-48FA-99FB-7C02EEDA9F3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {26E47BC8-DA54-417C-A795-7B6A84623223}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,80 @@
+<!-- Mensagens de Aviso -->
+<div *ngIf="msgAtual == MsgStatus.GenericCandidateAddError" class="alert alert-danger alert-dismissible fade show" role="alert">
+  <h6 class="alert-heading">Candidato não criado</h6>
+  <p>Não foi possível enviar o candidato ao servidor. Verifique sua conexão e tente novamente.</p>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="hideMensagem()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div *ngIf="msgAtual == MsgStatus.GenericCandidateDeleteError" class="alert alert-danger alert-dismissible fade show" role="alert">
+  <h6 class="alert-heading">Candidato não removido</h6>
+  <p>Não foi possível remover o candidato do servidor. Verifique sua conexão e tente novamente.</p>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="hideMensagem()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div *ngIf="msgAtual == MsgStatus.LegendaCandidateAddError" class="alert alert-danger alert-dismissible fade show" role="alert">
+  <h6 class="alert-heading">Candidato não removido</h6>
+  <p>A legenda informada já está sendo utilizada por outro partido.</p>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="hideMensagem()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div *ngIf="msgAtual == MsgStatus.CandidateDeleteSuccess" class="alert alert-success alert-dismissible fade show" role="alert">
+  <h6 class="alert-heading">Candidato removido com sucesso!</h6>
+  <p>O candidato selecionado foi removido com sucesso.</p>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="hideMensagem()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<!-- Lista de Candidatos c/ opção de remover -->
+<div class="container p-3 my-3 border">
+  <h3>Listagem de Candidatos</h3>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Legenda</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Nome do Vice</th>
+        <th scope="col">Remover</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let candidate of candidates" [attr.id]="candidate.candidateId">
+        <th scope="row">{{candidate.legenda}}</th>
+        <td>{{candidate.nome}}</td>
+        <td>{{candidate.nomeVice}}</td>
+        <td><button class="btn btn-danger" (click)="onDeletar(candidate.candidateId)">Deletar</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Cadastro de Candidatos -->
+<div class="container p-3 my-3 border">
+  <h3>Cadastrar Candidato</h3>
+  <form [formGroup]="candidateForm" (submit)="onCandidatoSubmit()"> 
+    <!-- Nome do Candidato -->
+    <div class="form-group">
+      <label>Nome do Candidato</label>
+      <input type="text" formControlName="nome" class="form-control" placeholder="Digite o nome do candidato">
+    </div>
+
+    <!-- Nome do Vice -->
+    <div class="form-group">
+      <label>Nome do Vice Candidato</label>
+      <input type="text" formControlName="nomeVice" class="form-control" placeholder="Digite o nome do vice candidato">
+    </div>
+
+    <!-- Legenda -->
+    <div class="form-group">
+      <label>Legenda</label>
+      <input type="number" formControlName="legenda" class="form-control" placeholder="Digite o número do partido">
+    </div>
+    <button type="submit" [disabled]="!candidateForm.valid" class="btn btn-success" >Criar</button>
+  </form>
+</div>

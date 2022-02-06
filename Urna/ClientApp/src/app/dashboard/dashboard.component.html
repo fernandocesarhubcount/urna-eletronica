@@ -1,0 +1,41 @@
+<div class="container p-3 my-3 border">
+    <h3>Dashboard de Candidatos</h3>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Legenda</th>
+          <th scope="col">Nomes dos Candidatos</th>
+          <th scope="col">Votos</th>
+          <th scope="col">%</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Todos menos branco ou nulo -->
+        <tr *ngFor = "let candidate of candidates">
+            <ng-template *ngIf="candidate.legenda != 0; then thenBlock"></ng-template>
+            <ng-template #thenBlock>
+                <th scope="row">{{candidate.legenda}}</th>
+                <td>{{candidate.nome}}<br>{{candidate.nomeVice}}</td>
+                <td>{{candidate.qtdVotos}}</td>
+                <td>{{toCandidatePercentage(candidate)}}%</td>
+            </ng-template>
+        </tr>
+
+        <!-- Brancos ou Nulos -->
+        <tr>
+            <td></td>
+            <td>Brancos ou Nulos</td>
+            <td>{{brancoCandidate.qtdVotos}}</td>
+            <td>{{toCandidatePercentage(brancoCandidate)}}%</td>
+        </tr>
+
+        <!-- Total -->
+        <tr>
+            <td></td>
+            <td>Total:</td>
+            <td>{{totalVotos}}</td>
+            <td>100.00%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
