@@ -1,0 +1,120 @@
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\appsettings.json
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\omnisharp.json
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\UrnaEletronicaWebAPI.exe
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\UrnaEletronicaWebAPI.deps.json
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\UrnaEletronicaWebAPI.runtimeconfig.json
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\UrnaEletronicaWebAPI.runtimeconfig.dev.json
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\UrnaEletronicaWebAPI.dll
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\ref\UrnaEletronicaWebAPI.dll
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\UrnaEletronicaWebAPI.pdb
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Microsoft.Bcl.HashCode.dll
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Microsoft.Data.Sqlite.dll
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\SQLitePCLRaw.nativelibrary.dll
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\SQLitePCLRaw.core.dll
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\obj\Debug\net5.0\UrnaEletronicaWebAPI.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\obj\Debug\net5.0\UrnaEletronicaWebAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\obj\Debug\net5.0\UrnaEletronicaWebAPI.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\obj\Debug\net5.0\UrnaEletronicaWebAPI.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\obj\Debug\net5.0\UrnaEletronicaWebAPI.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\obj\Debug\net5.0\UrnaEletronicaWebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\obj\Debug\net5.0\UrnaEletronicaWebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\obj\Debug\net5.0\staticwebassets\UrnaEletronicaWebAPI.StaticWebAssets.Manifest.cache
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\obj\Debug\net5.0\staticwebassets\UrnaEletronicaWebAPI.StaticWebAssets.xml
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\obj\Debug\net5.0\scopedcss\bundle\UrnaEletronicaWebAPI.styles.css
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\obj\Debug\net5.0\UrnaEletronicaWebAPI.RazorTargetAssemblyInfo.cache
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\obj\Debug\net5.0\UrnaEletronicaWebAPI.csproj.CopyComplete
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\obj\Debug\net5.0\UrnaEletronicaWebAPI.dll
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\obj\Debug\net5.0\ref\UrnaEletronicaWebAPI.dll
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\obj\Debug\net5.0\UrnaEletronicaWebAPI.pdb
+C:\Users\Usuario\Desktop\Desafio Backend HubCount\urna-eletronica\UrnaEletronicaWebAPI\obj\Debug\net5.0\UrnaEletronicaWebAPI.genruntimeconfig.cache
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\appsettings.json
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\omnisharp.json
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\UrnaEletronicaWebAPI.exe
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\UrnaEletronicaWebAPI.deps.json
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\UrnaEletronicaWebAPI.runtimeconfig.json
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\UrnaEletronicaWebAPI.runtimeconfig.dev.json
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\UrnaEletronicaWebAPI.dll
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\ref\UrnaEletronicaWebAPI.dll
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\UrnaEletronicaWebAPI.pdb
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Microsoft.Bcl.HashCode.dll
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Microsoft.Data.Sqlite.dll
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\SQLitePCLRaw.nativelibrary.dll
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\SQLitePCLRaw.core.dll
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\obj\Debug\net5.0\UrnaEletronicaWebAPI.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\obj\Debug\net5.0\UrnaEletronicaWebAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\obj\Debug\net5.0\UrnaEletronicaWebAPI.AssemblyInfoInputs.cache
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\obj\Debug\net5.0\UrnaEletronicaWebAPI.AssemblyInfo.cs
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\obj\Debug\net5.0\UrnaEletronicaWebAPI.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\obj\Debug\net5.0\UrnaEletronicaWebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\obj\Debug\net5.0\UrnaEletronicaWebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\obj\Debug\net5.0\staticwebassets\UrnaEletronicaWebAPI.StaticWebAssets.Manifest.cache
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\obj\Debug\net5.0\staticwebassets\UrnaEletronicaWebAPI.StaticWebAssets.xml
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\obj\Debug\net5.0\scopedcss\bundle\UrnaEletronicaWebAPI.styles.css
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\obj\Debug\net5.0\UrnaEletronicaWebAPI.RazorTargetAssemblyInfo.cache
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\obj\Debug\net5.0\UrnaEletronicaWebAPI.csproj.CopyComplete
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\obj\Debug\net5.0\UrnaEletronicaWebAPI.dll
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\obj\Debug\net5.0\ref\UrnaEletronicaWebAPI.dll
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\obj\Debug\net5.0\UrnaEletronicaWebAPI.pdb
+C:\Users\Usuario\Documents\GitHub\urna-eletronica\UrnaEletronicaWebAPI\obj\Debug\net5.0\UrnaEletronicaWebAPI.genruntimeconfig.cache
