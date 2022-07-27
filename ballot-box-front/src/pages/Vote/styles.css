@@ -1,0 +1,80 @@
+.container{
+  text-align: center;
+  background-color: #e1e1e1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+img{
+  right: 0;
+  position: absolute;
+  height: 150px;
+  width: 105px;
+  border: solid 1px black;
+}
+.cinzaEscuro{
+  top: 50%;
+  margin-top: -200px;
+  width: 250px;
+  height: 60px;
+  right: 20px;
+  position: absolute;
+}
+b{
+  position: relative;
+  top: 10px;
+}
+.preto{
+  border: solid 2px;
+  top: 50%;
+  margin-top: -135px;
+  position: absolute;
+  background-color: #444;
+  height: 300px;
+  width: 250px;
+  right: 20px;
+}
+.cinzaClaro{
+  position: absolute;
+  border: solid 1px;
+  left: 50%;
+  margin-left: -370px;
+  top: 50%;
+  margin-top: -190px;
+  position: absolute;
+  height: 350px;
+  width: 500px;
+  background-color: snow;
+}
+.cinzaEscuro{
+  background-color: #b6b5b5;
+}
+.bnt{
+  margin: 10px;
+  background-color: black;
+  color: snow;
+  border-radius: 5px;
+  height: 30px;
+  width: 50px;
+}
+.teclado2{
+  font-size: 11px;
+  position: absolute;
+  bottom: 20px;
+  left: 5px;
+  color: black;
+}
+.branco{
+  height: 40px;
+  width: 75px;
+}
+.laranja{
+  height: 40px;
+  width: 75px;
+  background-color: #E67401;
+}
+.verde{
+  height: 50px;
+  width: 75px;
+  background-color: green;
+}

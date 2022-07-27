@@ -1,0 +1,105 @@
+.vote-container
+{
+    width: 100%;
+    max-width: 1180px;
+    padding: 0 30px;
+    margin: 32px auto;
+}
+
+.vote-container header {
+display: flex;
+align-items:center;
+
+}
+
+.vote-container header span {
+
+    font-size: 20px;
+    margin-left:24px;
+
+}
+
+.book-container header span strong {
+
+    font-size: 20px;
+    margin-left:24px;
+    color:#251fc5;
+    
+}
+
+.vote-container header img {
+    height: 64px;
+}
+
+.vote-container header a{
+    width: 260px;
+    margin-left:auto;
+    margin-top: 0;
+}
+
+.vote-container header button {
+   height: 60px;
+   width: 60px; 
+   border-radius:4px;
+   border: 1px solid #dcdce6;
+   background: transparent;
+   margin-left: 16px;
+   transition:border-color 0.5s;
+}
+
+.vote-container header button:hover{
+
+    border-color: #251fc5;
+}
+.vote-container h1{
+
+    margin-top:80px;
+    margin-bottom: 24px;
+}
+
+.vote-container ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px;
+    list-style: none;
+}
+
+.vote-container ul li {
+
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 8px;
+    position:relative;
+}
+
+.vote-container ul li button{
+    position: absolute;
+    right: 24px;
+    top:24px;
+    border:0;
+    background: transparent;
+}
+
+.vote-container ul li button + button{
+    top:50px;
+}
+
+.vote-container ul li button:hover {
+    opacity: 0.8;
+}
+
+.vote-container ul li strong {
+    display: block;
+    margin-bottom: 16px;
+    color:#414141;
+}
+
+.vote-container ul li  p + strong {
+   margin-top:32px;
+}
+
+.vote-container ul li  p{
+    color:#737380;
+    line-height: 21px;
+    font-size:16px;
+ }
