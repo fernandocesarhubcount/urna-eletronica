@@ -1,0 +1,11 @@
+.show {
+    visibility: visible;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.panel-text{
+    font-size: 0.8rem;
+}

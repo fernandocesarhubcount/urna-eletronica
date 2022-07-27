@@ -1,0 +1,38 @@
+<h3>Cadastro de Candidatos</h3>
+<form [formGroup]="formCandidato" (submit)="submitForm()">
+  <div class="form-group mt-3">
+    <label for="legenda" class="mb-1">Legenda</label>
+    <input type="text" formControlName="legenda" class="form-control w-50" id="legenda">
+  </div>
+  <div [ngClass]="!legenda.valid ? 'show' : 'hidden'" class="text-danger validation-messages">
+    Insira um número com 2 dígitos.
+  </div>
+  <div class="form-group mt-3">
+    <label for="nome" class="mb-1">Nome</label>
+    <input type="text" formControlName="nome" class="form-control w-50" id="nome">
+  </div>
+  <div [ngClass]="!nome.valid ? 'show' : 'hidden'" class="text-danger validation-messages">
+    Insira um nome entre 6 e 20 caracteres. Não são permitidos números ou caracteres especiais.
+  </div>
+  <div class="form-group mt-3">
+    <label for="nomeVice" class="mb-1">Nome Vice</label>
+    <input type="text" formControlName="nomeVice" class="form-control w-50" id="nomeVice">
+  </div>
+  <div [ngClass]="!nomeVice.valid ? 'show' : 'hidden'" class="text-danger validation-messages">
+    Insira um nome entre 6 e 20 caracteres. Não são permitidos números ou caracteres especiais.
+  </div>
+  <button type="submit" class="btn btn-primary mt-3" [disabled]="!formCandidato.valid">Enviar</button>
+</form>
+
+<ng-template #confirmationModal let-c="close" let-d="dismiss">
+  <div [ngClass]="isEnvioFormSucesso ? 'bg-success' : 'bg-danger'" class="modal-header text-light">
+    <h4 class="modal-title" id="modal-basic-title">{{modalHeaderMessage}}</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>
+  </div>
+  <div class="modal-body">
+    <p>{{modalBodyMessage}}</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-danger" (click)="c('Save click')">Fechar</button>
+  </div>
+</ng-template>

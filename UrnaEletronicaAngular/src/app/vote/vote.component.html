@@ -1,0 +1,52 @@
+<h3>Votar</h3>
+<div class="d-flex flex-row w-50 border border-dark rounded py-4 mt-5">
+  <div class="container w-50">
+    <div class="row mb-2" style="gap: 0.5rem;">
+      <div (click)="appendValue(1)" class=" col-3 btn btn-outline-primary btn-sm">1</div>
+      <div (click)="appendValue(2)" class=" col-3 btn btn-outline-primary btn-sm">2</div>
+      <div (click)="appendValue(3)" class=" col-3 btn btn-outline-primary btn-sm">3</div>
+    </div>
+    <div class="row mb-2" style="gap: 0.5rem;">
+      <div (click)="appendValue(4)" class=" col-3 btn btn-outline-primary btn-sm">4</div>
+      <div (click)="appendValue(5)" class=" col-3 btn btn-outline-primary btn-sm">5</div>
+      <div (click)="appendValue(6)" class=" col-3 btn btn-outline-primary btn-sm">6</div>
+    </div>
+    <div class="row mb-2" style="gap: 0.5rem;">
+      <div (click)="appendValue(7)" class=" col-3 btn btn-outline-primary btn-sm">7</div>
+      <div (click)="appendValue(8)" class=" col-3 btn btn-outline-primary btn-sm">8</div>
+      <div (click)="appendValue(9)" class=" col-3 btn btn-outline-primary btn-sm">9</div>
+    </div>
+    <div class="row mb-2" style="gap: 0.5rem;">
+      <div (click)="appendValue(0)" class=" col-3 btn btn-outline-primary btn-sm">0</div>
+    </div>
+    <div class="row" style="gap: 0.5rem;">
+      <button (click)="submitNullVote()" class=" col-3 btn btn-outline-dark btn-sm">Branco</button>
+      <button (click)="clearInput()" class=" col-3 btn btn-warning btn-sm">Corrige</button>
+      <button (click)="submitVote()" class=" col-3 btn btn-success btn-sm" [disabled]="candidateFetched == null">Confirma</button>
+    </div>
+  </div>
+  <div class="px-4">
+    <input [(ngModel)]="candidateLegendaInput" (ngModelChange)="getCandidateByLegenda()" type="text panel-text" readonly>
+    <div *ngIf="candidateFetched != null" class="my-3" style="font-size: 0.8rem">
+      <p><strong>Nome: </strong>{{candidateFetched.nome}}</p>
+      <p><strong>Nome Vice: </strong>{{candidateFetched.nomeVice}}</p>
+      <p><strong>Legenda: </strong>{{candidateFetched.legenda}}</p>
+    </div>
+    <div *ngIf="candidateFetched == null && candidateLegendaInput.length == 2" class="my-3 panel-text">
+      <p>Nenhum candidato encontrado.</p>
+    </div>
+  </div>
+</div>
+
+<ng-template #confirmationModal let-c="close" let-d="dismiss">
+  <div [ngClass]="isPostSucesso ? 'bg-success' : 'bg-danger'" class="modal-header text-light">
+    <h4 class="modal-title" id="modal-basic-title">{{modalHeaderMessage}}</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>
+  </div>
+  <div class="modal-body">
+    <p>{{modalBodyMessage}}</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-danger" (click)="c('Save click')">Fechar</button>
+  </div>
+</ng-template>

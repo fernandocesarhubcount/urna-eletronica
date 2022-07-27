@@ -40,7 +40,17 @@ namespace UrnaEletronicaWebAPI.Controllers
 
             _candidateRepository.DeleteCandidateByLegenda(candidateLegenda);
 
-            return Ok("Deleted");
+            return Ok();
+        }
+
+        [HttpGet("{candidateLegenda}")]
+        public IActionResult Get(int candidateLegenda) 
+        {
+           var result = _candidateRepository.GetCandidateByLegenda(candidateLegenda);
+
+           if (result == null) return NotFound();
+
+           return Ok(result);
         }
     }
 }

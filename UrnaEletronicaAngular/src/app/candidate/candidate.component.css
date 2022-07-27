@@ -1,0 +1,11 @@
+.validation-messages {
+    font-size: 0.8rem;
+}
+
+.show {
+    visibility: visible;
+}
+
+.hidden {
+    visibility: hidden;
+}

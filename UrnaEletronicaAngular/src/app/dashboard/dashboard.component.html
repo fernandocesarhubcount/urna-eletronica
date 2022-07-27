@@ -1,0 +1,35 @@
+<h3>Resultado Parcial</h3>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Legenda</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Nome Vice</th>
+      <th scope="col">Quantidade Votos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let candidateVotes of candidatesVotes">
+      <th scope="row">{{candidateVotes.candidate != null ? candidateVotes.candidate.legenda : "Nulo"}}</th>
+      <td>{{candidateVotes.candidate != null ? candidateVotes.candidate.nome : ""}}</td>
+      <td>{{candidateVotes.candidate != null ? candidateVotes.candidate.nomeVice : ""}}</td>
+      <td>{{candidateVotes.votesQuantity}}</td>
+      <td>
+        <button *ngIf="candidateVotes.candidate != null" class="btn btn-danger" (click)="excluirCandidato(candidateVotes.candidate)">Excluir</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<ng-template #confirmationModal let-c="close" let-d="dismiss">
+  <div [ngClass]="isDeletedSucesso ? 'bg-success' : 'bg-danger'" class="modal-header text-light">
+    <h4 class="modal-title" id="modal-basic-title">{{modalHeaderMessage}}</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>
+  </div>
+  <div class="modal-body">
+    <p>{{modalBodyMessage}}</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-danger" (click)="c('Save click')">Fechar</button>
+  </div>
+</ng-template>
