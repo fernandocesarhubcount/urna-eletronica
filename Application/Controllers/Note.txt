@@ -1,0 +1,2 @@
+//Utilizando end-point em vez dos controllers. 
+https://ardalis.com/mvc-controllers-are-dinosaurs-embrace-api-endpoints/
