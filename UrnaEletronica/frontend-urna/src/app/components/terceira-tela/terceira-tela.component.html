@@ -1,0 +1,12 @@
+<table class="table" >
+    <tr ngclass="btn-primary"> 
+        <th class="tbl2">nomeCandidato</th> 
+        <th class="tbl2">nomeVice</th>
+        <th class="tbl2">Quantidade votos</th>    
+    </tr> 
+    <tr *ngFor="let candidato of allCandidates | async">
+        <td class="tbl2">{{candidato.nomeCanditato}}</td> 
+        <td class="tbl2">{{candidato.nomeVice}}</td>
+        <td class="tbl2">{{candidato.quantidadeVotos}}</td>  
+    </tr>    
+</table>

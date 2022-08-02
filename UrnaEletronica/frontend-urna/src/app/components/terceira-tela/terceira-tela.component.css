@@ -1,0 +1,19 @@
+
+th,td{
+    text-align: center;
+}
+
+th{
+    background-color:#422956;
+    color: white;
+}
+
+.tbl1
+{
+    width: 400px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto; 
+}
