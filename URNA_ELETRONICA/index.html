@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletrônica</title>
+    <link rel="stylesheet" href="./css/urna.css">
+</head>
+<body>
+<!-- O código abaixo será a base para montar o layout da urna no CSS. -->
+    <div class="base">
+        <div class="urna">
+<!-- O código abaixo será o responsável por exibir a informações do prefeito e imprimir na tela mensagens de orientações ao usuario  -->
+            <div class="tela">
+                <div class="visor" styles="">
+                    <div>
+                        <span>
+                            Números para votar: 15, 26, 37 & 48
+                        </span>
+                    </div>
+                    <br>
+                    <div>
+                        <span>
+                             Seu voto para:
+                        </span>
+                    </div>
+                    <div>
+                        <h1>
+                             PREFEITO
+                        </h1>
+                    </div>
+                    <div class="numero_para_votar">
+                        <span>
+                            Números
+                        </span>
+                    
+                        <div class="caixa-dos-inputs">
+                            <div class="input-do-numero primeiro-digito">
+                            
+                            </div>
+                        </div>
+                        <div class="caixa-dos-inputs">
+                            <div class="input-do-numero segundo-digito">
+                
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+<!-- O código abaixo será o responsável por exibir a orientações sobre os botões (BRANCO,CORRIGIR E CONFIRMAR) -->
+                    <div>
+                        <span>
+                            Aperte a tecla:
+                        </span>
+                    </div>
+                    <div class="orientacao">
+                        <div>
+                            <span>
+                                ⚪BRANCO para votar em BRANCO
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                🟠LARANJA para CORRIGIR
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                🟢VERDE para CONFIRMAR
+                            </span>
+                       </div>
+                    </div>
+                </div>
+<!-- O código abaixo será o responsável por exibir a confirmação do voto em BRANCO -->
+                <div class="visor-confirmacao" style="display: none">
+                    <div>
+                        <h1>
+                            Obrigado por votar, você votou em BRANCO.
+                        </h1>
+                    </div>
+                </div>
+                <div class="visor-confirmacao-candidato" style="display: none">
+                
+                </div>
+                <div class="visorCandidato" style="display: none">
+                
+                </div>
+            </div>
+            <div class="teclado">
+                <div class="titulo">
+                    <img src="./imagens/logo.png" alt="logo República Federativa do Brasil">
+                    <h1>Justiça Eleitoral</h1>
+                </div>
+<!-- O código abaixo será a base para montar o layout do teclado númerico da urna no CSS e depois montar a parte lógica no JavaScrip -->
+                <div class="teclado-numerico">
+                    <div id="1" class="botao-numerico">
+                        <span>
+                            1
+                        </span>
+                    </div>
+                    <div id="2" class="botao-numerico">
+                        <span>
+                            2
+                        </span>
+                    </div>
+                    <div id="3" class="botao-numerico">
+                        <span>
+                            3
+                        </span>
+                    </div>
+                    <div id="4" class="botao-numerico">
+                        <span>
+                            4
+                        </span>
+                    </div>
+                    <div id="5" class="botao-numerico">
+                        <span>
+                            5
+                        </span>
+                    </div>
+                    <div id="6" class="botao-numerico">
+                        <span>
+                            6
+                        </span>
+                    </div>
+                    <div id="7" class="botao-numerico">
+                        <span>
+                            7
+                        </span>
+                    </div>
+                    <div id="8" class="botao-numerico">
+                        <span>
+                            8
+                        </span>
+                    </div>
+                    <div id="9" class="botao-numerico">
+                        <span>
+                            9
+                        </span>
+                    </div>
+                    <div id="0" class="botao-numerico">
+                        <span>
+                            0
+                        </span>
+                    </div>
+                </div>
+                <div class="teclado-de-acoes">
+                    <div id="branco" class="botao-branco">
+                        <span class="botao-acao">
+                            BRANCO
+                        </span>
+                    </div>
+                    <div id="corrige" class="botao-corrige">
+                        <span class="botao-acao">
+                            CORRIGE
+                        </span>
+                    </div>
+                    <div id="confirma" class="botao-confirma">
+                        <span class="botao-acao">
+                            CONFIRMA
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./js/controller/urnaController.js" defer></script>
+    <script type="module" src="./js/modelo/candidato.js"></script>
+</body>
+</html>

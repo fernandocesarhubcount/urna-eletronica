@@ -2,7 +2,7 @@
 using voto_API.Model;
 using System.Threading.Tasks;
 
-namespace voto_API.Repositores
+namespace voto_API.Repositories
 {
     public interface IvotoRepository
     {
@@ -15,6 +15,6 @@ namespace voto_API.Repositores
         Task Upadate(Voto voto);
 
         Task Delete(int Id);
-
+        Task Delete(string id);
     }
 }

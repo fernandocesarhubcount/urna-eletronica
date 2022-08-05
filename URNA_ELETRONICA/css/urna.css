@@ -1,0 +1,161 @@
+.base{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #333333;
+}
+
+
+body>div>div>div{
+    background-color: #485666;
+    border-radius: 5px;
+}
+
+
+.urna{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1000px ;
+    height: 500px;
+    background-color: #dcdde1;
+    border-radius: 5px;
+    
+}
+
+.tela{
+    width: 55%;
+    height: 80%;
+    background-color: #e3eef9;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.teclado{
+    width: 30%;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo>img{
+    margin: 10px;
+    width: 42px;
+    
+}
+
+.titulo>h1{
+    margin: 10px;
+    font-size: 20px;
+    
+}
+.orientacao{
+    line-height: 45px;
+}
+.caixa-dos-inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 55px;
+    border: 1px solid black;
+    font-size: 30px;
+    margin-right: 9px;
+}
+    
+.numero_para_votar{
+    display: flex;
+    align-items: center;
+}  
+
+.teclado-numerico{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.teclado-numerico>div{
+    background-color: #292f33;
+    border-radius: 5px;
+    
+}
+
+.teclado-numerico>div>span{
+    color: white;
+    font-size: 20px;
+}
+.botao-numerico{
+    width: 70px;
+    height: 50px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.teclado-de-acoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.teclado-de-acoes>div{
+    border-radius: 5px;
+    margin: 5px;
+    width: 30%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.botao-branco{
+    background-color: #e5e7e5;
+    color: black;
+}
+
+.botao-corrige{
+    background-color: #e97829;
+    color: black;
+}
+
+.botao-confirma{
+    background-color: #749f48;
+    color: black;
+}
+
+.nome-cadidato{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+.visor-confirmacao>div>h1{
+    text-align: center;
+}
+
+.visor-confirmacao-candidato>div>h1{
+    text-align: center;
+}
+
+.titulo-do-visor{
+    display: flex;
+    flex-direction: row;
+}

@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using voto_API.Model;
+using voto_API.Repositories;
 
 namespace voto_API
 {
@@ -22,6 +23,7 @@ namespace voto_API
         public void ConfigureServices(IServiceCollection services)
         {
             IServiceCollection serviceCollection = services.AddDbContext<VotoContext>(x => x.UseSqlite("Data source=votos.db"));
+            services.AddScoped<IvotoRepository, votoRepository>()
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
