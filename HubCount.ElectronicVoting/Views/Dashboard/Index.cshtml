@@ -1,0 +1,60 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["isDashboard"] = true;
+}
+
+@*Summary Widgets*@
+<div class="row mb-4">
+
+    <div class="col-md-4">
+        <div class="d-flex flex-row widget summary status">         
+            <div class="flex-column py-1 justify-content-center">
+                <span class="lead">Total de Votos</span>
+                <h1 class="display-6 fw-bold">@ViewBag.TotalStatus</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-4">
+    <div class="col-md-5">
+        <div class="widget chart">
+            <div class="p-6">
+                <h5 class="fw-bold">Analise dos Votos: </h5>
+            </div>
+            <ejs-accumulationchart id="doughnutchart" enableSmartLabels background="#1a222b">
+                <e-accumulation-series-collection>
+                    <e-accumulation-series dataSource="@ViewBag.DoughnutChartData"
+                                           xName="candidateTitle" yName="amount"
+                                           innerRadius="60%" legendShape="Circle" 
+                                           palettes=@(new string[]{"#0e8d76","#a4b219","#cb9b00","#8a442c","#0454b5","#7d0a0a","#822690","#4c2090","#313e93","#0096ac"})>
+                        <e-accumulationseries-datalabel name="formattedAmount" visible></e-accumulationseries-datalabel>
+                    </e-accumulation-series>
+                </e-accumulation-series-collection>
+                <e-accumulationchart-legendsettings position="Top" toggleVisibility="false">
+                    <e-legendsettings-textstyle color="#fff" size="1rem"></e-legendsettings-textstyle>
+                </e-accumulationchart-legendsettings>
+                <e-accumulationchart-tooltipsettings enable></e-accumulationchart-tooltipsettings>
+            </ejs-accumulationchart>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="widget">
+            <div class="p-4">
+                <h5 class="fw-bold">Registro:</h5>
+            </div>
+            <div class="px-3 pb-4">
+                <ejs-grid id="recent-transactions" dataSource="@ViewBag.RecentVotes" gridLines="None"  allowSorting="true" allowPaging="true">
+                    <e-grid-pagesettings pageSize="6"></e-grid-pagesettings>
+                    <e-grid-columns>
+                        <e-grid-column headerText="Candidate" field="Candidates.Name"></e-grid-column>
+                        <e-grid-column headerText="Date" field="Date" type="date" format="MMM-dd-yy hh:mm" ></e-grid-column>           
+                    </e-grid-columns>
+                </ejs-grid>
+            </div>
+        </div>
+    </div>
+</div>

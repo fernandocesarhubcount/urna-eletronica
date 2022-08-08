@@ -1,0 +1,22 @@
+﻿@model IEnumerable<HubCount.ElectronicVoting.Models.Vote>
+
+@{
+    ViewData["PageTitle"] = "Registro de voto";
+    ViewData["PageActionText"] = "+ Novo Voto";
+    ViewData["PageActionUrl"] = "/Vote/AddVote";
+}
+
+<div class="row">
+    <div class="col-md-7">
+        <ejs-grid id="votes" dataSource="@Model" gridLines="None" allowSorting="true" allowPaging="true">
+            <e-grid-pagesettings pageSize="10"></e-grid-pagesettings>
+            <e-grid-columns>
+                <e-grid-column headerText="Candidate" field="Candidates.Name"></e-grid-column>
+                <e-grid-column headerText="Date" field="Date" width="110px" type="date" format="MMM-dd-yy"
+                    textAlign="Left"></e-grid-column>
+                <e-grid-column headerText="Amount" field="Amount" textAlign="Right" width="110px">
+                </e-grid-column>
+            </e-grid-columns>
+        </ejs-grid>
+    </div>
+</div>

@@ -1,0 +1,102 @@
+﻿@model IEnumerable<HubCount.ElectronicVoting.Models.Candidate>
+
+@{
+    ViewData["PageTitle"] = "Candidatos";
+    ViewData["PageActionText"] = "+ Novo Candidato";
+    ViewData["PageActionUrl"] = "/Candidate/AddOrEdit";
+}
+
+<div class="row">
+    <div class="col-md-10">
+        <ejs-grid id="candidates" dataSource="@Model" gridLines="None" allowSorting="true" allowPaging="true">
+            <e-grid-pagesettings pageSize="6"></e-grid-pagesettings>
+            <e-grid-columns>
+                <e-grid-column headerText="Candidato" field="Name"></e-grid-column>
+                <e-grid-column headerText="Vice" field="ViceName"></e-grid-column>
+                <e-grid-column headerText="Legenda" field="Legend"></e-grid-column>
+                <e-grid-column headerText="Ação" template="#actionColumnTemplate" width="100px">
+                </e-grid-column>
+            </e-grid-columns>
+        </ejs-grid>
+    </div>
+</div>
+
+@* Deletar/Editar *@
+<script id="actionColumnTemplate" type="text/x-template">
+    <div class="d-flex flex-row justify-content-start">
+        <a class="btn btn-sm no-a-decoration" href="/Candidate/AddOrEdit/${CandidateId}">
+            <i class="fa-solid fa-pen fa-lg"></i>
+        </a>
+        <form action="/Candidate/Delete/${CandidateId}" method="post">
+    @Html.AntiForgeryToken()
+            <button type="submit" class="btn btn-sm btn-link no-a-decoration"
+            onclick="return confirm(&quot;Certifique-se de excluir this record?&quot;)">
+                <i class="fa-solid fa-trash-can fa-lg text-danger"></i>
+            </button>
+        </form>
+    </div>
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*<table class="table">
+    <thead>
+    <tr>
+    <th>
+    @Html.DisplayNameFor(model => model.Name)
+    </th>
+    <th>
+    @Html.DisplayNameFor(model => model.ViceName)
+    </th>
+    <th>
+    @Html.DisplayNameFor(model => model.Election)
+    </th>
+    <th>
+    @Html.DisplayNameFor(model => model.Status)
+    </th>
+    <th>
+    @Html.DisplayNameFor(model => model.Legend)
+    </th>
+    <th></th>
+    </tr>
+    </thead>
+    <tbody>
+
+    @foreach (var item in Model) {
+    <tr>
+    <td>
+    @Html.DisplayFor(modelItem => item.Name)
+    </td>
+    <td>
+    @Html.DisplayFor(modelItem => item.ViceName)
+    </td>
+    <td>
+    @Html.DisplayFor(modelItem => item.Election)
+    </td>
+    <td>
+    @Html.DisplayFor(modelItem => item.Status)
+    </td>
+    <td>
+    @Html.DisplayFor(modelItem => item.Legend)
+    </td>
+    <td>
+    <a asp-action="AddOrEdit" asp-route-id="@item.CandidateId">Edit</a> |
+    <a asp-action="Details" asp-route-id="@item.CandidateId">Details</a> |
+    <a asp-action="Delete" asp-route-id="@item.CandidateId">Delete</a>
+    </td>
+    </tr>
+    }
+    </tbody>
+    </table>*@

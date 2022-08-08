@@ -1,0 +1,48 @@
+﻿@model HubCount.ElectronicVoting.Models.Candidate
+
+@{
+    ViewData["PageTitle"] = Model.CandidateId == 0 ? "Criar um novo Candidato" : "Editar Candidato";
+}
+
+@*<h1>Create, Candidato</h1>
+
+    <h4>Candidate</h4>
+    <hr />*@
+<div class="row">
+    <div class="col-md-5">
+        <div class="widget p-5" style="background-color:#212b36">
+            <form asp-action="AddOrEdit">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" name="CandidateId" value="@Model.CandidateId" />
+
+                <div class="mb-3">
+                    <ejs-textbox id="name" placeholder="Nome Completo do Candidato" ejs-for="Name"
+                        floatLabelType="Always">
+                    </ejs-textbox>
+                    <span asp-validation-for="Name" class="text-danger" fs-6></span>
+                </div>
+
+                <div class="mb-3">
+                    <ejs-textbox id="viceName" placeholder="Nome do Vice" ejs-for="ViceName" floatLabelType="Always">
+                    </ejs-textbox>
+
+                    <span asp-validation-for="ViceName" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <ejs-textbox id="election" placeholder="Tipo da Eleição" ejs-for="Election" floatLabelType="Always">
+                    </ejs-textbox>
+                    <span asp-validation-for="Election" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <ejs-numerictextbox id="numeric" ejs-for="Legend" format="###.##" placeholder="Legenda"
+                        floatLabelType="Always">
+                    </ejs-numerictextbox>
+                </div>
+
+                <ejs-button id="submit" type="submit" content="submit" cssClass="e-success"></ejs-button>
+            </form>
+        </div>
+    </div>
+</div>

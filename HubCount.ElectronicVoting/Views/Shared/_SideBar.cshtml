@@ -1,0 +1,55 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    List<Object> menuItems = new List<Object>();
+
+    menuItems.Add(new
+    {
+        text = "Inicio",
+        separator = true,
+    });
+    menuItems.Add(new
+    {
+        text = "Resultado",
+        url = "/",
+        iconCss = "fa-solid fa-box",
+    });
+    menuItems.Add(new
+    {
+        text = "Lista de Candidatos",
+        url = "/Candidate",
+        iconCss = "fa-solid fa-folder-closed",
+    });
+    menuItems.Add(new
+    {
+        text = "Registrar Voto",
+        iconCss = "fa-solid fa-arrow-right-arrow-left",
+        url = "/Vote/AddVote"
+    });
+}
+
+
+<ejs-sidebar id="sidebar" width="290px" enableDock dockSize="100px" target=".dock-target" enableGestures="false">
+    <e-content-template>
+
+        <div class="profile-wrapper">
+            <div class="titles d-flex flex-column ps-3">
+                <h6 class="mb-0">Justiça Eleitoral</h6>
+                <span class="text-muted">TSE</span>
+            </div>
+        </div>
+
+        <ejs-menu id="menu" items="menuItems" orientation="Vertical" hamburgerMode></ejs-menu>
+    </e-content-template>
+</ejs-sidebar>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        dockBar = document.getElementById('sidebar').ej2_instances[0];
+        document.getElementById('sidebar-toggler').onclick = function () {
+            dockBar.toggle();
+        };
+    });
+
+</script>
