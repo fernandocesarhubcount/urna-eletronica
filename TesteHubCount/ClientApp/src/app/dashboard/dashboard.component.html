@@ -1,0 +1,23 @@
+<h1>Dashboard</h1>
+
+
+
+<table class='table table-striped' aria-labelledby="tableLabel">
+  <thead>
+    <tr>
+      <th>Nome Completo</th>
+      <th>Vice</th>
+      <th>Legenda</th>
+      <th>Votos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let vote of listVotes">
+      <td *ngIf="vote.candidateModel?.nome !=null"> {{vote.candidateModel?.nome}}</td>
+      <td *ngIf="vote.candidateModel?.nome == null"> Brancos ou Nulos</td>
+      <td>{{vote.candidateModel?.vice}}</td>
+      <td>{{vote.candidateModel?.legenda}}</td>
+      <td>{{vote.totalVotes}}</td>
+    </tr>
+  </tbody>
+</table>

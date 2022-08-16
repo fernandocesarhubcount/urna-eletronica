@@ -1,0 +1,84 @@
+<h1>Candidatos</h1>
+
+
+
+<table class='table table-striped' aria-labelledby="tableLabel">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Nome Completo</th>
+      <th>Legenda</th>
+      <th>Editar</th>
+      <th>Excluir</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let candidato of candidatos">
+      <td>{{candidato.id}}</td>
+      <td>{{candidato.nome}}</td>
+      <td>{{candidato.legenda}}</td>
+      <td><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+          (click)="getByIdCandidate(candidato.id)">editar</button></td>
+      <td><button class="btn btn-danger" (click)="remove(candidato.id)"><span>excluir</span></button></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+<a [routerLink]="['/cadastro']">
+  <button type="button" class="btn btn-outline-success">
+    Cadastrar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+      class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+      <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+      <path fill-rule="evenodd"
+        d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
+    </svg>
+  </button>
+</a>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Editar</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <fieldset>
+            <table class='table table-striped' aria-labelledby="tableLabel">
+
+              <tbody>
+                <tr>
+                  <td>Nome completo:</td>
+                  <td><input type="text" name="nome" placeholder="Nome Completo" minlength="2" maxlength="100" required
+                      autofocus [(ngModel)]='candidato.nome'></td>
+                </tr>
+                <tr>
+                  <td>Nome do vice:</td>
+                  <td><input type="text" name="nomeVice" placeholder="Nome do vice" minlength="2" maxlength="100"
+                      required autofocus [(ngModel)]='candidato.vice'></td>
+                </tr>
+                <tr>
+                  <td>Legenda:</td>
+                  <td><input type="number" name="legenda" placeholder="Legenda" min="2" max="100" required autofocus
+                      [(ngModel)]='candidato.legenda'></td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+          </fieldset>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary" (click)="putCandidate(candidato.id, candidato)">Salvar</button>
+      </div>
+    </div>
+  </div>
+</div>

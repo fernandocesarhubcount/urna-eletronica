@@ -1,0 +1,68 @@
+<title>Urna Eletrônica</title>
+
+<h1>Urna Eletrônica</h1>
+<form id="votoForm" method="POST">
+  <div class="urna">
+    <div class="tela">
+      <div class="d-1">
+        <div class="d-1-left">
+          <div class="d-1-1">
+            <span>SEU VOTO PARA</span>
+          </div>
+          <div class="d-1-2">
+            <span>PRESIDENTE</span>
+          </div>
+          <div class="d-1-3">
+            <input type="text" class="numero pisca" id="inputVoto" maxlength="2" #votoinput
+              onchange="getByLegendaCandidate(inputVoto.value)">
+          </div>
+          <div class="d-1-4">
+            <span id="nomePres">Nome: {{candidato.nome}}</span><br />
+            <span id="nomeVice">Vice-Prefeito: {{candidato.vice}}</span> <br />
+          </div>
+        </div>
+
+      </div>
+      <div class="d-2">
+        <strong>
+          Aperte a tecla: <br />
+          CONFIRMA para CONFIRMAR este voto<br />
+          CORRIGE para CORRIGIR este voto
+        </strong>
+      </div>
+    </div>
+    <div class="esquerda">
+      <div class="topo-esquerda">
+        <div class="logo"> <img src="assets/images/brasao.png" alt="" /> </div>
+        <div class="Justica-eleitoral">JUSTIÇA<br />ELEITORAL</div>
+      </div>
+      <div class="teclado">
+        <div class="teclado--linha">
+          <button value="1" #botao1 class="teclado--botao" (click)="click(botao1.value)">1</button>
+          <button value="2" #botao2 class="teclado--botao" (click)="click(botao2.value)">2</button>
+          <button value="3" #botao3 class="teclado--botao" (click)="click(botao3.value)">3</button>
+        </div>
+        <div class="teclado--linha">
+          <button value="4" #botao4 class="teclado--botao" (click)="click(botao4.value)">4</button>
+          <button value="5" #botao5 class="teclado--botao" (click)="click(botao5.value)">5</button>
+          <button value="6" #botao6 class="teclado--botao" (click)="click(botao6.value)">6</button>
+        </div>
+        <div class="teclado--linha">
+          <button value="7" #botao7 class="teclado--botao" (click)="click(botao7.value)">7</button>
+          <button value="8" #botao8 class="teclado--botao" (click)="click(botao8.value)">8</button>
+          <button value="9" #botao9 class="teclado--botao" (click)="click(botao9.value)">9</button>
+        </div>
+        <div class=" teclado--linha">
+          <button value="0" #botao0 class="teclado--botao" (click)="click(botao0.value)">0</button>
+        </div>
+        <div class="teclado--linha">
+          <div class="teclado--botao botao--branco" (click)="addBrancoVote()">BRANCO</div>
+          <input type="reset" class="teclado--botao botao--corrige" value="CORRIGE">
+          <div class=" teclado--botao botao--confirma" (click)="addVote(votoinput.value)">
+            CONFIRMA</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</form>
