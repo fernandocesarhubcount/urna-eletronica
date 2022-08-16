@@ -1,0 +1,30 @@
+<h1>Cadastro</h1>
+
+<form>
+  <fieldset>
+    <table class='table table-striped' aria-labelledby="tableLabel">
+
+      <tbody>
+        <tr>
+          <td>Nome completo:</td>
+          <td><input type="text" name="nome" placeholder="Nome Completo" minlength="2" maxlength="100" required
+              autofocus [(ngModel)]='candidato.nome'></td>
+        </tr>
+        <tr>
+          <td>Nome do vice:</td>
+          <td><input type="text" name="nomeVice" placeholder="Nome do vice" minlength="2" maxlength="100" required
+              autofocus [(ngModel)]='candidato.vice'></td>
+        </tr>
+        <tr>
+          <td>Legenda:</td>
+          <td><input type="number" name="legenda" placeholder="Legenda" min="2" max="100" required autofocus
+              [(ngModel)]='candidato.legenda'></td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+<button type="button" class="btn btn-success" (click)="addCandidato()">SALVAR</button>
+  </fieldset>
+</form>
+
+
