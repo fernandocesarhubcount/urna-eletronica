@@ -40,9 +40,9 @@ Mas vamos para o que importa: O Teste.
 
 ### Regras do teste:
 
-- Crie um branch deste repositório e, quando estiver finalizado, realize um pull request para a master
+- Crie um branch deste repositório e, quando estiver finalizado, realize um pull request para a master e me envie um e-mail (fernando.cesar@hubcount.com.br)
 - Desenvolver e entregar até a meia noite da data combinada.
-- Utilizar a linguagem C# com o Entity Framework (_Requisitos Obrigatórios_)
+- Utilizar a linguagem C# com o Entity Framework e ferramentas web como Javascript, HTML e CSS(_Requisitos Obrigatórios_)
 - Pode utilizar qualquer outra ferramenta que te agrade
 - Havendo qualquer dúvida sobre o teste é só entrar em contato pelo e-mail: fernando.cesar@hubcount.com.br
 
@@ -53,8 +53,8 @@ Mas vamos para o que importa: O Teste.
 3. Ferramentas: deve utilizar as tecnologias obrigatórias.
 4. Validações: deve validar os campos e retornar mensagens amigáveis.
 5. Código: bem escrito e bem descrito.
-6. Plus*: desenvolver com algum framework JS, preferência por AngularJS ou Angular 2+.
-7. Plus II*: layout.
-8. Plus III*: outras tecnologias utilizadas.
+6. Plus*: desenvolver com algum framework JS (AngularJS, Angular 2+, React, Vue ...).
+7. Plus II*: layout (você não é designer, mas sabemos como uma urna se parece).
+8. Plus III*: outras tecnologias utilizadas (Dapper, Bootstrap ...).
 
 \*: _o importante são os outros pontos, mas esse poderá ser escolhido como ponto de desempate_
