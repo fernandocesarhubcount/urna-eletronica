@@ -40,11 +40,13 @@ Mas vamos para o que importa: O Teste.
 
 ### Regras do teste:
 
-- Crie um branch deste repositório e, quando estiver finalizado, realize um pull request para a master e me envie um e-mail (fernando.cesar@hubcount.com.br)
+- Crie um branch deste repositório e, quando estiver finalizado, realize um pull request para a master e me envie um e-mail*
 - Desenvolver e entregar até a meia noite da data combinada.
 - Utilizar a linguagem C# com o Entity Framework e ferramentas web como Javascript, HTML e CSS(_Requisitos Obrigatórios_)
 - Pode utilizar qualquer outra ferramenta que te agrade
-- Havendo qualquer dúvida sobre o teste é só entrar em contato pelo e-mail: fernando.cesar@hubcount.com.br
+- Havendo qualquer dúvida sobre o teste é só entrar em contato pelo e-mail*
+
+*-fernando.cesar@hubcount.com.br
 
 ### Método de avaliação por prioridade (_da mais para a menos importante_):
 
